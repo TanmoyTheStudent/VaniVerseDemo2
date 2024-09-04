@@ -104,7 +104,7 @@ sx={design}
               },
             }}
             component={Link}
-            to=""
+            to="/our-services/providing-platform"
             target="_blank" 
             rel="noopener noreferrer"
           >
