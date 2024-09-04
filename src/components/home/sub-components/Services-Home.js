@@ -26,7 +26,24 @@ const design={
     },
   }
 
-const button=["Explore More","Contact Us","Message Us","Register With Us"]
+const button=[
+  {
+    name:"Explore More",
+    link:"/our-services"
+  },
+  {
+     name:"Contact Us",
+    link:"/contact-us"
+  },
+  {
+    name:"Message Us",
+    link:"/message-us"
+  },
+  {
+    name:"Register With Us",
+    link:"/register-yourself"
+  }
+]
 
 const ServicesHome = () => {
   return (
@@ -398,9 +415,9 @@ const ServicesHome = () => {
               }
             }}
             component={Link}
-            to="/contact-us"
+            to={ele.link}
           >
-            {ele}
+            {ele.name}
           </Button>
         </Grid>
               </>
