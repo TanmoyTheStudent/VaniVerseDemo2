@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CoveredLaguages from '../services/CoveredLanguages';
+import LanguagesNext from './sub-components/LanguagesNext';
 import { Container,Typography,Grid,Button,Card,CardActions,Divider,Dialog,DialogContent,DialogActions,DialogTitle } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -385,7 +385,7 @@ Sign up now and start your journey with us as an annotator! Your expertise and p
       <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
         <DialogTitle>Covered Languages</DialogTitle>
         <DialogContent>
-          <CoveredLaguages />
+          <LanguagesNext />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
