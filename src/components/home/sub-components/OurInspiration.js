@@ -1,28 +1,11 @@
 import { useState } from 'react';
-import { Container,Typography,Grid,Button,Card,CardActions,Paper,Dialog, DialogContent } from '@mui/material'
+import { Container,Typography,Grid,Button,Card,CardActions,Paper,Dialog, DialogContent,Divider } from '@mui/material'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Map from "../../../required-data/assests/image/Map.jpg"
 
-const design={
-    padding: 2,
-    textAlign: 'center',
-    position: 'relative',
-    margin: 2,
-    backgroundColor: '#f3f1ee',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-    '&::after': {
-      content: '""',
-      display: 'block',
-      width: '100%',
-      height: '3px',
-      backgroundColor: '#008080',
-      position: 'absolute',
-      bottom: 0,
-      left: 0,
-    },
-  }
+
 
 function OurInspiration() {
   const [open, setOpen] = useState(false);
@@ -37,16 +20,21 @@ function OurInspiration() {
 
   return (
     <div>
-        <div style={{marginBottom:"50px"}}>
-        <Paper 
-      elevation={5} 
-      sx={design}
-    >
-      <Typography variant="h4" style={{fontFamily:"Georgia",wordSpacing: '0.2em'}}>
-        OUR INSPIRATION 
-      </Typography>
-    </Paper>
-
+          <div style={{marginBottom:"150px"}}>
+        <Divider
+          sx={{
+            backgroundColor: 'blue', // Sets the color of the divider
+            height: '5px',           // Adjust the thickness of the divider
+            margin: '10px 0px',        // Optional: adds margin around the divider
+          }}/>
+        <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>OUR INSPIRATION</h1>
+        <Divider
+          sx={{
+            backgroundColor: 'blue', 
+            height: '5px',           
+            margin: '10px 0px',
+            marginBottom:"5%"
+        }}/>
     <Container >
         <Grid container spacing={0}  justifyContent="center" style={{marginBottom:"4%"}}>
         <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center' }}>
