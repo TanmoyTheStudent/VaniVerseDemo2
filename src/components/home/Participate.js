@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import CoveredLaguages from '../services/CoveredLanguages'
-import { Container,Typography,Grid,Button,Card,CardActions,Divider,Dialog,DialogContent,DialogActions,DialogTitle } from '@mui/material'
+import CoveredLaguages from '../services/CoveredLanguages';
+import { Container,Typography,Grid,Button,Card,CardActions,Divider,Dialog,DialogContent,DialogActions,DialogTitle } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
