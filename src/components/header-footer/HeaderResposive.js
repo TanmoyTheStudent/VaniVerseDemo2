@@ -7,15 +7,24 @@ function HeaderResposive() {
     <div>
            <nav className="navbar navbar-light  navbar-expand-xl" style={{ backgroundColor: '#e7dedd' }}>
     <div className="container-fluid">
-        <div className="col-lg-6 col-md-10 col-10 d-flex align-items-center justify-content-center">
-                <Link className="navbar-brand mb-0 h3 text-primary fs-1 fw-bold home-link d-flex align-items-center justify-content-center" to="/">
-                    <img 
-                        src={Logo}
-                        alt="Vani Verse Logo" 
-                        style={{ maxWidth: '65%', height: 'auto', display: 'block' }} 
-                    />
-                </Link>
-        </div>
+       <div className="col-lg-6 col-md-10 col-10">
+          <Link
+              className="navbar-brand mb-0 h3 text-primary fs-1 fw-bold home-link"
+               to="/"
+              style={{ display: 'flex', alignItems: 'center' }} // Flex to align items vertically
+            >
+                <img
+                  src={Logo}
+                  alt="Vani Verse Logo"
+                  style={{
+                    maxWidth: '65%',
+                    height: 'auto',
+                    display: 'block',
+                    marginLeft: '5%', // Add gap to the left
+                  }}
+                />
+        </Link>
+      </div>
 
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
          <span className="navbar-toggler-icon"></span>
