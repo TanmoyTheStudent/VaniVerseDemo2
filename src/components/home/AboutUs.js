@@ -5,17 +5,101 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Image from "../../required-data/assests/image/profilePic.jpeg"
 import ContactCard from './sub-components/ContactCard';
+import OurInspiration from './sub-components/OurInspiration';
+import Background from "../../required-data/assests/image/background.jpeg"
+import { AboutUsInfo } from './sub-components/AboutUsInfo';
 
 function AboutUs() {
   return (
-    <div className='m-5'>
+    <div className=''>
+
+<div style={{
+  backgroundImage: `url(${Background})`,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  minHeight: "500px",   
+  height: 'auto',       
+  maxHeight: "1500px",  
+  width: '100%',
+  display: 'flex',
+   alignItems: 'center', // Centers vertically
+   justifyContent: "center",
+  padding: '10px',       // Added some padding for spacing
+  margin: " auto",   // Centered the div horizontally
+  overflowY: "auto"
+}}>
+
+<Container style={{height:"100%"}}>
+<Grid
+      container
+      direction="column"
+      alignItems="center"
+      justifyContent="center"
+      style={{  textAlign: 'center',height:"100%" }}
+    >
+      <Grid item  style={{ display: 'flex', justifyContent: 'center' }}>
+        <Card
+         style={{height:"100%", 
+            padding: '20px', 
+            marginTop:"30px",
+            marginBottom:"30px",
+            borderRadius: '15px', 
+            boxShadow: '0 10px 20px rgba(0, 0, 0, 0.5)'}} align="center">
+     <Typography
+        variant="h3"
+        sx={{
+          fontSize: {
+            xs: '1.25rem',  // 0px - 600px
+            sm: '1.5rem',  // 600px - 960px
+            md: '2rem',  // 960px - 1280px
+            lg: '2.5rem',  // 1280px - 1920px
+            xl: '3rem',  // 1920px and above
+          },
+          margin: 2,
+          color:"#2472d1",
+          fontWeight:"bold",
+
+        }}
+      >
+        Empowering Businesses with High-Quality Data Annotations in Indian Languages
+      </Typography>
+      <Typography
+       
+        sx={{
+          fontSize: {
+            xs: '1rem',  // 0px - 600px
+            sm: '1rem',  // 600px - 960px
+            md: '1.25rem',  // 960px - 1280px
+            lg: '1.5rem',  // 1280px - 1920px
+            xl: '1.5rem',  // 1920px and above
+          },
+          marginBottom: 3,
+          textAlign:"center"}}
+      >
+       <p style={{marginBottom:"20px"}}>
+        At Vani and Verse Solutions, we are passionate about bridging the gap between data and insights. As a provider of data annotation services in Indian languages, we are dedicated to helping businesses and researchers unlock the power of their data and drive innovation.<br/>
+        </p> 
+      Recognizing the importance of accurate data annotation for machine learning, AI, and various applications, we set out to create a dedicated platform that caters specifically to the rich tapestry of Indian languages.
+
+      </Typography>
+      </Card>
+      </Grid>
+      
+      </Grid>
+
+      </Container>         
+
+</div>
+
+
         <Divider
           sx={{
             backgroundColor: 'blue', // Sets the color of the divider
             height: '5px',           // Adjust the thickness of the divider
-            margin: '10px 0px',        // Optional: adds margin around the divider
+            margin: '10px 0px', 
+            marginTop:"10%"       
           }}/>
-        <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>Founder</h1>
+        <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>FOUNDER</h1>
         <Divider
           sx={{
             backgroundColor: 'blue', 
@@ -72,89 +156,64 @@ function AboutUs() {
             </Grid>
             </Container>
 
-    <div style={{marginBottom:"300px"}}>
-        <Divider
-          sx={{
-            backgroundColor: 'blue', // Sets the color of the divider
-            height: '5px',           // Adjust the thickness of the divider
-            margin: '10px 0px',        // Optional: adds margin around the divider
-          }}/>
-        <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>Our Mission</h1>
-        <Divider
-          sx={{
-            backgroundColor: 'blue', 
-            height: '5px',           
-            margin: '10px 0px'
+  <OurInspiration/>
+
+{
+  AboutUsInfo.map((ele)=>{
+    return(
+      <div style={{marginTop:"8%",marginBottom:"15%"}} key={ele.id}>
+      <Divider
+        sx={{
+          backgroundColor: 'blue', 
+          height: '5px',          
+          margin: '10px 0px',        
         }}/>
-
-
+      <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>{ele.title}</h1>
+      <Divider
+        sx={{
+          backgroundColor: 'blue', 
+          height: '5px',           
+          margin: '10px 0px'
+      }}/>
+<Typography
+      //variant="h3"
+      sx={{
+        fontSize: {
+          xs: '1rem',  // 0px - 600px
+          sm: '1.25rem',  // 600px - 960px
+          md: '1.5rem',  // 960px - 1280px
+          lg: '1.5rem',  // 1280px - 1920px
+          xl: '1.75rem',  // 1920px and above
+        },
+        margin:"50px",
+        marginTop:"5%",
+        textAlign: "justify",
+        lineHeight: '1.8',
+        wordSpacing:"5px" 
         
-          <p style={{margin:"30px",fontFamily:"Georgia",marginTop:"80px"}}>Almost 90% of Indian Population are missing out on Social, Educational and Financial Opportunities because of the Language barrier. Only 0.1% content on the Internet is in Indian native languages. According to NASSCOM Report 2021, one of the main challenges Indian Enterprises face in order to serve majority of Indian consumers is the Language Barrier across non-English speaking regions (90% population). <br/><br/>
+      }} >
+    {ele.description}
+    </Typography>
 
-What is needed is an AI Powered interface where individuals can communicate effectively using their own native language in Real-Time. With this interface one can interact in their own native language with natives of any other language seamlessly. To Learn and Enhance their knowledge, people will be able to access any content in any language on the Internet directly in their native language.</p>
-        
-
-        </div>
-
-        <div style={{marginBottom:"300px"}}>
-        <Divider
+      </div>
+    )
+  })
+}
+   
+          <Divider
           sx={{
             backgroundColor: 'blue', // Sets the color of the divider
             height: '5px',           // Adjust the thickness of the divider
             margin: '10px 0px',        // Optional: adds margin around the divider
           }}/>
-        <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>Our Vision</h1>
+        <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>OUR CONTACT</h1>
         <Divider
           sx={{
             backgroundColor: 'blue', 
             height: '5px',           
             margin: '10px 0px'
         }}/>
-
-        <div>
-          <p>
-          India is a diverse country where in every 5km one can see changes in the dialect and language used for communication. Most of these languages are linked with the regional culture and have a rich literature. Technology is progressing at a very rapid pace, but to use these technologies, one has to understand English as most of the technical content are available only in English. 90% of the Indian population are missing out these opportunities. Our vision is to build a communication layer which makes language a medium of communication instead of playing a role of a barrier.
-
-Nowadays, anyone can learn and teach themselves any skills using online content available on the Internet, given that they know English. What if everyone were able to watch and read any content on the Internet directly in their Native Language in real-time. Rural India will have access to excellent quality educational lectures and courses for their intellectual growth.
-
-If people are able to communicate directly in their native language, where each person can talk in their native language and the other person hears a translated version in their Native Language in real-time, lots of communication issues will be resolved. It will have a tremendous impact on social life and employability of people.
-          </p>
-        </div>
- </div>
-
- <div style={{marginBottom:"300px"}}>
-        <Divider
-          sx={{
-            backgroundColor: 'blue', // Sets the color of the divider
-            height: '5px',           // Adjust the thickness of the divider
-            margin: '10px 0px',        // Optional: adds margin around the divider
-          }}/>
-        <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>Our Collaborations/Testimony</h1>
-        <Divider
-          sx={{
-            backgroundColor: 'blue', 
-            height: '5px',           
-            margin: '10px 0px'
-        }}/>
-        <div></div>
-
-        </div>
-
-        
-        <Divider
-          sx={{
-            backgroundColor: 'blue', // Sets the color of the divider
-            height: '5px',           // Adjust the thickness of the divider
-            margin: '10px 0px',        // Optional: adds margin around the divider
-          }}/>
-        <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>Our Contact</h1>
-        <Divider
-          sx={{
-            backgroundColor: 'blue', 
-            height: '5px',           
-            margin: '10px 0px'
-        }}/>
-        <div className='col-12 mt-5 d-flex flex-column align-items-center justify-content-center' style={{ marginTop:"60px" }}>
+        <div className='col-12 mt-5 d-flex flex-column align-items-center justify-content-center' style={{ marginTop:"5%",marginBottom:"10%" }}>
         <ContactCard/>
         </div>
     </div>
