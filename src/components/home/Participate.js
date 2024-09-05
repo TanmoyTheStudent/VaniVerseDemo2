@@ -221,7 +221,7 @@ function Participate() {
   backgroundColor:"ButtonHighlight",
   minHeight: "500px",   // Minimum height of 500px
   height: 'auto',       // Let the height adjust based on content
-  maxHeight: "1500px",  
+  maxHeight: "2500px",  
   width: '100%',
   //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
@@ -232,21 +232,6 @@ function Participate() {
   overflowY: "auto"      // Allow vertical scrolling if content overflows
 }}>
 
-{/* <div style={{
-  //backgroundImage: `url(${Background})`,
-  backgroundColor:"ButtonHighlight",
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  width: '100%',
-  height: '500px',
-   alignItems: 'center', // Centers vertically
-  justifyContent: 'center',
-  marginBottom:"50px",
-  marginTop:"0%"
-}}> */}
-
-
-      {/* gggg        */}
 
       <Container style={{marginBottom:"10%"}}>
         <Grid container spacing={0}  justifyContent="center" style={{margin:"0px"}}>
