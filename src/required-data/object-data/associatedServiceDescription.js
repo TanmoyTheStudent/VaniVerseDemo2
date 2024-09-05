@@ -13,7 +13,7 @@ export const serviceDescription=[
     },
     {
         id:2,
-        title:"Image Annotation",
+        title:"Image Annotation Process",
         description:(
         <>
             <b>• Project Initialization- Define Your Objectives:</b> We begin by understanding the specific goals of your image annotation project. This involves discussing the types of images to be annotated and the desired outcomes, ensuring that we tailor the process to meet your needs.<br/>
