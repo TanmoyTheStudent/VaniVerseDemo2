@@ -30,7 +30,7 @@ const tabDesign2 = {
   fontWeight: 'bold',
   marginTop:"20px",
   fontSize: {
-    xs: '1.25rem',
+    xs: '.75rem',
     sm: '1.25rem',
     md: '1.5rem',
     lg: '1.5rem'

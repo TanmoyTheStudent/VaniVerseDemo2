@@ -37,7 +37,7 @@ function AssociatedServices() {
     >
      
 
-      <Box sx={{ maxWidth: '100%',margin:0,padding:"50px",alignItems:'center' }}>
+      <Box sx={{ maxWidth: '100%',margin:0,padding:{xs:"20px",sm:"30px",md:"50px"},alignItems:'center' }}>
         
       <Typography
       variant="h4"
@@ -45,13 +45,13 @@ function AssociatedServices() {
       sx={{
         fontWeight: 'bold',
         fontSize: {
-          xs: '1.25rem',
+          xs: '1.15rem',
           sm: '1.5rem',
           md: '1.75rem',
           lg: '2rem',
           xl: '2.5rem'
         },
-        textAlign: 'justify',
+        textAlign: "left",
       }}
     >
       {/* Using the reusable StyledScrollLink component */}

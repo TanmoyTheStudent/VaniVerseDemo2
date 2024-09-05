@@ -12,22 +12,22 @@ export const earnData=[
     },
     {
         id:3,
-        title:"Speech to Text",
+        title:"Transcription",
         description:"In this activity you have to transcribe speech recording of your langauge to text in your native script. Proper spelling and format would be required here. "
     },
     {
         id:4,
-        title:"Text to Text",
+        title:"Translation",
         description:"If you are good at other language, apart from mother-tongue,you can participate in this activity. Here you have to translate text from one language to another language"
     },
     {
         id:5,
-        title:"Text to Speech",
+        title:"Studio Recording",
         description:"Audio recording of the written text based on the requirements of language, dialect, gender, age of the speaker and the recording environment of the audio."
     },
     {
         id:6,
-        title:"Verification",
+        title:"Audio Verification",
         description:"After the primary process, the verification may be required based on the activity.Experts of such can participate in this."
     }
 ]
