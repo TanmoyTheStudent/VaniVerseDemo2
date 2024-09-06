@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import LanguagesNext from './sub-components/LanguagesNext';
-import { Container,Typography,Grid,Button,Card,CardActions,Divider,Dialog,DialogContent,DialogActions,DialogTitle } from '@mui/material';
+import { Container,Typography,Grid,Button,Card,CardActions,Divider,Dialog,DialogContent,DialogActions,DialogTitle } from '@mui/material'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
@@ -41,7 +41,12 @@ function Participate() {
                         Join Our Team of Annotators and Earn While You Contribute!
                         </Typography>
                         <Typography variant="h6" 
-                            style={{fontFamily:"Georgia"}}  
+                            sx={{fontFamily:"Georgia",
+                              textAlign:{
+                                xs:"justify",
+                                md:"center"
+                              }
+                          }}  
                         >
                       Are you fluent in an Indian language and looking for a way to earn while making a difference? Join us as an annotator on our platform, where you can contribute to the growth of Indian language processing and enhance the quality of data in Indian languages and earn rewards for your efforts!
                         </Typography>
@@ -80,8 +85,8 @@ function Participate() {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  padding: '10px',       // Added some padding for spacing
-  margin: "10px auto",   // Centered the div horizontally
+  //padding: '10px',       // Added some padding for spacing
+  //margin: "10px auto",   // Centered the div horizontally
   overflowY: "auto" ,     // Allow vertical scrolling if content overflows
   background:'linear-gradient(to right, #4c00ff, #1b1464)'
 }}>
@@ -99,7 +104,7 @@ function Participate() {
             marginBottom:"50px"
         }}/>
 
-<Typography variant='h6' align="justify" style={{margin:"20px",color:"white",fontWeight: '',fontFamily:"sans-serif"}}>
+<Typography variant='h6' align="justify" style={{margin:"4%",color:"white",fontWeight: '',fontFamily:"sans-serif"}}>
 <br/>
 <h3 style={{textAlign:"center"}}><b>Why Become an Annotator?</b></h3><br/>
 <b>• Flexible Work Hours :</b> Enjoy the freedom to work at your own pace and schedule. Whether you’re a student, a homemaker, professional or someone looking for a side hustle, our annotation tasks fit seamlessly into your lifestyle. Whether you have a few hours a day or can dedicate more time, our platform allows you to tailor your work schedule to fit your lifestyle.<br/><br/>
@@ -118,14 +123,13 @@ function Participate() {
 
 <div 
   style={{
-    margin:"50px",
     marginTop:"5%",
     marginBottom:"15%"
     }}
 >  
-<Typography variant='h6' align="justify" style={{margin:"20px",fontFamily:"sans-serif"}}>
+<Typography variant='h6' align="justify" style={{margin:"4%",fontFamily:"sans-serif"}}>
 <br/>
-<h3 style={{textAlign:"center"}}><b>Who Can Participate?</b></h3><br/>
+<h2 style={{textAlign:"center"}}><b>Who Can Participate?</b></h2><br/>
 <b>• Language Enthusiasts :</b> If you have a strong command or fluency in any Indian language and a passion for linguistics, we want you!
 <br/><br/>
  
@@ -162,7 +166,7 @@ function Participate() {
         </Typography>
         
 
-<Typography variant='h6' align='center' style={{margin:"20px",color:"white",fontWeight: "initial",fontFamily:"sans-serif"}}>
+<Typography variant='h6' align='center' sx={{margin:"4%",color:"white",fontWeight: "initial",fontFamily:"sans-serif",textAlign:{xs:"justify",md:"center"}}}>
        In our data annotation program we would initiate multiple activities based on the need of the project. If you are eligible, you can participate in those activities, and can earn money accordingly. Some of the common activities currently going on are mentioned below. Once again it is mentioned that the activities would change based on the need of the project.        
   </Typography>
         
@@ -204,7 +208,7 @@ function Participate() {
             onClick={handleClickOpen}
            
        >
-            Languages We Are Working Now
+            Languages We Are Looking For
     </Button>
      
      
@@ -231,6 +235,7 @@ function Participate() {
   margin: " auto",   // Centered the div horizontally
   overflowY: "auto"      // Allow vertical scrolling if content overflows
 }}>
+
 
 
       <Container style={{marginBottom:"10%"}}>
@@ -270,6 +275,7 @@ function Participate() {
             xl: '2rem',  // 1920px and above
           },
           marginBottom: "8%",
+          textAlign:{xs:"justify",md:"center"}
         }}
       >
        Become a part of our growing community of annotators and contribute to the exciting field of Indian language processing. Together, we can contribute to a future where technology understands and respects the richness of Indian languages.
@@ -368,7 +374,7 @@ Sign up now and start your journey with us as an annotator! Your expertise and p
     </div>
      
       <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
-        <DialogTitle>Covered Languages</DialogTitle>
+        <DialogTitle> Languages</DialogTitle>
         <DialogContent>
           <LanguagesNext />
         </DialogContent>
