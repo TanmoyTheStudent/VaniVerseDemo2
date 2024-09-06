@@ -26,7 +26,7 @@ function Participate() {
         <Container style={{marginBottom:"100px",marginTop:"50px"}}>
         <Grid container spacing={0}  justifyContent="center" >
         <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center' }}>
-        <Card sx={{ width: '100%',height:"100%", padding: '10px', margin: '10px',boxShadow:"none"}} align="center" >
+        <Card sx={{ width: '100%',height:"100%", padding: {xs:'0px',md:"10px"}, margin: {xs:'0px',md:"10px"},boxShadow:"none"}} align="center" >
                     <CardActionArea>
                      
                       <CardContent>
