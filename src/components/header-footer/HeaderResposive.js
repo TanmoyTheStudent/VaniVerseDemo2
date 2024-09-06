@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import Logo from "../../required-data/assests/image/Logo9.png"
 import './header.css'
+import { Box } from "@mui/material";
 
 function HeaderResposive() {
   const handleCloseOffcanvas = () => {
@@ -24,16 +25,17 @@ function HeaderResposive() {
       to="/"
       style={{ display: 'flex', alignItems: 'center' }} // Flex to align items vertically
     >
-      <img
-        src={Logo}
-        alt="Vani Verse Logo"
-        style={{
-          maxWidth: '65%',
-          height: 'auto',
-          display: 'block',
-          marginLeft: '5%', // Add gap to the left
-        }}
-      />
+       <Box
+                component="img"
+                src={Logo}
+                alt="Vani Verse Logo"
+                sx={{
+                  maxWidth: {lg:"65%",md:'60%',xs:"80%"},
+                  height: 'auto',
+                  display: 'block',
+                  marginLeft: '5%', // Add gap to the left
+                }}
+          />
     </Link>
   </div>
 
