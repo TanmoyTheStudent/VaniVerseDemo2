@@ -51,7 +51,10 @@ function Home() {
           margin: 0,
           color:"#226dc7",
            fontWeight: 'bold',
-           marginBottom:"2%"
+           marginBottom:"2%",
+           '@media (max-width: 350px)': {
+              fontSize: '2.25rem'
+           }
         }}
       >
         <span style={{ whiteSpace: 'nowrap' }}>Data that speaks,</span>
@@ -70,7 +73,13 @@ function Home() {
             lg: '2rem',  
             xl: '2rem', 
           },
-          marginBottom: {xs:0,lg:3}
+          marginBottom: {xs:0,lg:3},
+          '@media (max-width: 350px)': {
+                fontSize: '1.25rem'
+          },
+          '@media (min-width: 350px) and (max-width: 400px)': {
+                fontSize: '1.4rem'
+           },
         }}
       >
        <span style={{ whiteSpace: 'nowrap' }}>Empower your AI model with</span><br/> <span style={{ whiteSpace: 'nowrap' }}>meticulously curated speech and</span><br/> 
