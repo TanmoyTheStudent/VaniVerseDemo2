@@ -1,28 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Box, Typography,Button,Paper,Grid,Card,CardActionArea,CardContent } from '@mui/material';
-import { servicesInHomePage,associatedServices,button } from '../../../required-data/object-data/servicesInHome';
-
-const design={
-    padding: 2,
-    textAlign: 'center',
-    position: 'relative',
-    margin: 2,
-    backgroundColor: '#f3f1ee',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-    '&::after': {
-      content: '""',
-      display: 'block',
-      width: '100%',
-      height: '3px',
-      backgroundColor: '#008080',
-      position: 'absolute',
-      bottom: 0,
-      left: 0,
-    },
-  }
-
-
+import { servicesInHomePage,associatedServices,button,design } from '../../../required-data/object-data/servicesInHome';
 
 const ServicesHome = () => {
   return (
