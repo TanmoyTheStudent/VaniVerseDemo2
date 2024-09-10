@@ -28,7 +28,7 @@ const Languages = () => {
       }}
     >
       <Box sx={{ maxWidth: { xs: '100%', md: '50%' }, marginBottom: { xs: 2, md: 0 } }}>
-        <Typography  component="div" sx={{ fontWeight: 'bold',textAlign:"center",fontSize: {xs: '1.5rem', sm: '1.75rem', md: '2rem'} }}>
+        <Typography  component="div" sx={{ fontWeight: 'bold',textAlign:"center",fontSize: {xs: '1.75rem', sm: '2rem', md: '2rem', lg: "2.25rem", xl: "2.5rem"} }}>
           Languages We Have Already Covered
         </Typography>
 
@@ -37,12 +37,12 @@ const Languages = () => {
             display: 'flex', 
             flexWrap: 'wrap', 
             marginTop: 2,
-            marginLeft:{xs:"3%",sm:"5%",md:"1%"}
+            marginLeft:{xs:"3%",sm:"5%",md:"1%",xl:"7%"}
           }}
         >
         {languages.map((ele, i) => (
                     <Box sx={{ 
-                      minWidth:"15%",maxWidth: '25%', textAlign: 'center', margin: {xs:1,sm:1.5,md:3} }} key={i}>
+                      minWidth:"15%",maxWidth: '25%', textAlign: 'center', margin: {xs:1.5,sm:1.5,md:3} }} key={i}>
                         <Typography variant="subtitle1">
                             {ele}
                         </Typography>
