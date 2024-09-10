@@ -9,13 +9,13 @@ export const servicesInHomePage=[
     {
         id:1,
         title:"Transcription",
-        description:"We have collected a large amount of audio data of native people spoken in various Indian languages and dialects. Then we transcript the audio into accurate, readable text, and prepare a dataset that is essential for NLP.",
+        description:"Transcription of audio by people native to the language into accurate, readable text.",
         image:Image2,
         link:"/our-services/transcription"
     },
     {
         id:2,
-        title:"Studio/Conversational Audio Recording",
+        title:"Audio Recording",
         description:"Read Speech recording,or extempore audio recording by the native people based on the requirements of language, dialect, gender, age of the speaker, expressive story reading, and the recording environment of the audio.",
         image:Image1,
         link:"/our-services/audio-recording"
@@ -33,5 +33,25 @@ export const servicesInHomePage=[
         description:" We meticulously curate custom datasets in both audio and text to ensure accuracy and relevance for your AI models",
         image: Image4,
         link:"/our-services/custom-data-curation"
+    }
+]
+
+
+export const associatedServices=[
+    {
+        title:"Audio Segmentation",
+        description:"Dividing audio into meaningful segments for analysis."
+    },
+    {
+        title:"Image Annotations",
+        description:"Detailed image data annotations."
+    },
+    {
+        title:"Audio Verification",
+        description:"Ensuring integrity and authenticity of audio data."
+    },
+    {
+        title:"NLP Annotations",
+        description:"Data Curation for NLPs project requirements."
     }
 ]
