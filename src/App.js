@@ -10,7 +10,9 @@ import Participate from "./components/home/Participate";
 import AboutUs from "./components/home/AboutUs";
 import ContactUs from "./components/home/ContactUs";
 import Login from "./components/user-authentication/Login";
-import Registration from "./components/user-authentication/Registration";
+//import Registration from "./components/user-authentication/Registration";
+import RegistrationForm from "./components/user-authentication/NewRegistration";
+import ForgotPassword from "./components/home/sub-components/ForgotPassword";
 import Transcription from "./components/services/Transcription";
 import Translation from "./components/services/Translation";
 import CustomDataCuration from "./components/services/CustomDataCuration";
@@ -41,7 +43,8 @@ function App() {
         <Route path="/about-us" element={<AboutUs/>}/>
         <Route path="/contact-us" element={<ContactUs />}/>
         <Route path="/login" element={<Login />}/>
-        <Route path="/register-yourself" element={<Registration/>}/>
+        <Route path="/register-yourself" element={<RegistrationForm/>}/>
+        <Route path="/forgot-password" element={<ForgotPassword/>}/>
         <Route path="/terms-of-use" element={<TermsOfUse/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
         <Route path="/message-us" element={<MessageForm/>}/>
