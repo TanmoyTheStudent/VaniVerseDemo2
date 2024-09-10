@@ -1,47 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Box, Typography,Button,Paper,Grid } from '@mui/material';
-import { servicesInHomePage } from '../../../required-data/object-data/servicesInHome';
+import { Box, Typography,Button,Paper,Grid,Card,CardActionArea,CardContent } from '@mui/material';
+import { servicesInHomePage,associatedServices,button,design } from '../../../required-data/object-data/servicesInHome';
 
-const design={
-    padding: 2,
-    textAlign: 'center',
-    position: 'relative',
-    margin: 2,
-    //marginLeft:5,
-    //marginRigt:5,
-    backgroundColor: '#f3f1ee',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-    '&::after': {
-      content: '""',
-      display: 'block',
-      width: '100%',
-      height: '3px',
-      backgroundColor: '#008080',
-      position: 'absolute',
-      bottom: 0,
-      left: 0,
-    },
-  }
 
-const button=[
-  {
-    name:"Explore More",
-    link:"/our-services"
-  },
-  {
-     name:"Contact Us",
-    link:"/contact-us"
-  },
-  {
-    name:"Message Us",
-    link:"/message-us"
-  },
-  {
-    name:"Register With Us",
-    link:"/register-yourself"
-  }
-]
 
 const ServicesHomeSmall = () => {
   return (
@@ -71,13 +33,13 @@ const ServicesHomeSmall = () => {
       sx={{
         display: 'flex',
         flexDirection: {
-          xs: 'column', // Stack vertically on extra-small screens
-          sm: 'column', // Stack vertically on small screens
-          md: 'row', // Align horizontally on medium screens and up
+          xs: 'column', 
+          sm: 'column', 
+          md: 'row',
         },
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'linear-gradient(to right, #23d6d4, #0a3758)', // Gradient background
+        background: 'linear-gradient(to right, #23d6d4, #0a3758)', 
         padding: 4,
         color: 'white',
         minHeight:"500px",
@@ -101,14 +63,15 @@ const ServicesHomeSmall = () => {
       margin: "2%",
       color: 'white',
       fontSize: {
-        xs: '2rem',  // 0px - 600px
-        sm: '2.5rem',  // 600px - 960px
-        md: '3rem',    // 960px - 1280px
-        lg: '3.5rem',    // 1280px - 1920px
-        xl: '4rem',    // 1920px and above
+        xs: '2rem',  
+        sm: '2.5rem', 
+        md: '2.75rem',   
+        lg: '3rem',   
+        xl: '4rem',    
       },
-      display: 'block',  // Ensure Typography is displayed as a block element
-       textAlign: 'center'
+      display: 'block',  
+       textAlign: 'center',
+       fontWeight:"bold"
     }}
   >
     {servicesInHomePage[ele].title}
@@ -120,14 +83,14 @@ const ServicesHomeSmall = () => {
       //margin:"2%",
       color: 'white',
       fontSize: {
-        xs: '1rem',   // 0px - 600px
-        sm: '1rem',     // 600px - 960px
-        md: '1.25rem',   // 960px - 1280px
-        lg: '1.25rem',   // 1280px - 1920px
-        xl: '1.5rem',   // 1920px and above
+        xs: '1.25rem', 
+        sm: '1.35rem',   
+        md: '1.4rem',   
+        lg: '1.5rem',   
+        xl: '1.75rem',  
       },
-      display: 'block',  // Ensure Typography is displayed as a block element
-      margin: '10px',  // Optional: Add some space between the title and description
+      display: 'block', 
+      margin: '1%',
       textAlign: 'center',  
     }}
   >
@@ -136,14 +99,14 @@ const ServicesHomeSmall = () => {
       <Button
             variant="contained"
             sx={{
-              backgroundColor: '#07145f', // Blue background color
-              borderRadius: '20px',       // Rounded corners
+              backgroundColor: '#07145f', 
+              borderRadius: '20px',       
               '&:hover': {
-                backgroundColor: '#7038b7', // Darker blue on hover
+                backgroundColor: '#7038b7', 
               },
             }}
             component={Link}
-            to={servicesInHomePage[0].link}
+            to={servicesInHomePage[ele].link}
             target="_blank" 
             rel="noopener noreferrer"
           >
@@ -151,30 +114,35 @@ const ServicesHomeSmall = () => {
     </Button>
      
       </Box>
-      <Box
-        sx={{
-          position: 'relative',
-          width: { xs: '100%', md: '50%' },
-          height: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <img 
-          src={servicesInHomePage[ele].image} 
-          alt="Microphone and waveform"
-          style={{
-            maxWidth: '75%',
-            zIndex: 1,
-            borderRadius: '10%', 
-            margin:"5%",
-            padding:"2% ",
-            border:"5px solid white"
-           // boxShadow: '0px 0px 30px 20px #8ba2f3',
-          }}
-        />
-      </Box>
+     
+     {/* image */}
+
+     <Box
+  sx={{
+    position: 'relative',
+    width: { xs: '100%', md: '50%' },
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    mt: {xs:"2%",sm:'1.5%'}
+  }}
+>
+  <Box
+    component="img"
+    src={servicesInHomePage[ele].image}
+    alt="Microphone and waveform"
+    sx={{
+      maxWidth: {xs:'85%',sm:"70%"},
+      zIndex: 1,
+      borderRadius: '10%',
+      margin: "5%",
+      padding: "2%",
+      border: "5px solid white",
+    }}
+  />
+</Box>
+
     </Box>
       ):(
       
@@ -183,13 +151,13 @@ const ServicesHomeSmall = () => {
       sx={{
         display: 'flex',
         flexDirection: {
-          xs: 'column', // Stack vertically on extra-small screens
-          sm: 'column', // Stack vertically on small screens
-          md: 'row', // Align horizontally on medium screens and up
+          xs: 'column', 
+          sm: 'column', 
+          md: 'row', 
         },
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'linear-gradient(to right, #660c05, #f99cd1)', // Gradient background
+        background: 'linear-gradient(to right, #660c05, #f99cd1)', 
         padding: 4,
         color: 'white',
         minHeight:"500px",
@@ -206,40 +174,39 @@ const ServicesHomeSmall = () => {
       
         <Typography
     gutterBottom
-    variant="h2"
     component="div"
     sx={{
       margin: "2%",
       color: 'white',
       fontSize: {
-        xs: '2rem',  // 0px - 600px
-        sm: '2.5rem',  // 600px - 960px
-        md: '3rem',    // 960px - 1280px
-        lg: '3.5rem',    // 1280px - 1920px
-        xl: '4rem',    // 1920px and above
+        xs: '2rem',  
+        sm: '2.5rem',  
+        md: '2.75rem',   
+        lg: '3rem',    
+        xl: '4rem',    
       },
-      display: 'block',  // Ensure Typography is displayed as a block element
-       textAlign: 'center'
+      display: 'block',  
+       textAlign: 'center',
+       fontWeight:"bold"
     }}
   >
     {servicesInHomePage[ele].title}
   </Typography>
 
   <Typography
-    variant="body"
     sx={{
       //margin:"2%",
       color: 'white',
       fontSize: {
-        xs: '1rem',   // 0px - 600px
-        sm: '1rem',     // 600px - 960px
-        md: '1.25rem',   // 960px - 1280px
-        lg: '1.25rem',   // 1280px - 1920px
-        xl: '1.5rem',   // 1920px and above
+        xs: '1.25rem',   
+        sm: '1.35rem',   
+        md: '1.4rem',   
+        lg: '1.5rem',   
+        xl: '1.75rem',  
       },
-      display: 'block',  // Ensure Typography is displayed as a block element
-      margin: '10px',  // Optional: Add some space between the title and description
-      textAlign: 'center',  
+      display: 'block',  
+      margin: '1%',  
+      textAlign:"center"  
     }}
   >
     {servicesInHomePage[ele].description}
@@ -247,10 +214,10 @@ const ServicesHomeSmall = () => {
       <Button
             variant="contained"
             sx={{
-              backgroundColor: '#07145f', // Blue background color
-              borderRadius: '20px',       // Rounded corners
+              backgroundColor: '#07145f', 
+              borderRadius: '20px',      
               '&:hover': {
-                backgroundColor: '#7038b7', // Darker blue on hover
+                backgroundColor: '#7038b7', 
               },
             }}
             component={Link}
@@ -263,30 +230,34 @@ const ServicesHomeSmall = () => {
      
       </Box>
 
+      {/* image */}
+
       <Box
-        sx={{
-          position: 'relative',
-          width: { xs: '100%', md: '50%' },
-          height: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <img 
-          src={servicesInHomePage[ele].image} 
-          alt="Microphone and waveform"
-          style={{
-            maxWidth: '75%',
-            zIndex: 1,
-            borderRadius: '10%', 
-            margin:"5%",
-            padding:"2% ",
-            border:"5px solid white"
-            //boxShadow: '0px 0px 30px 20px #8ba2f3',
-          }}
-        />
-      </Box>
+  sx={{
+    position: 'relative',
+    width: { xs: '100%', md: '50%' },
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    mt: {xs:"2%",sm:'1.5%'}
+  }}
+>
+  <Box
+    component="img"
+    src={servicesInHomePage[ele].image}
+    alt="Microphone and waveform"
+    sx={{
+      maxWidth: {xs:'85%',sm:"70%"},
+      zIndex: 1,
+      borderRadius: '10%',
+      margin: "5%",
+      padding: "2%",
+      border: "5px solid white",
+    }}
+  />
+</Box>
+
     </Box>
     
 
@@ -296,17 +267,20 @@ const ServicesHomeSmall = () => {
     })
     }
 
+
+{/* For Other Services */}
+
 <Box
       sx={{
         display: 'flex',
         flexDirection: {
-          xs: 'column', // Stack vertically on extra-small screens
-          sm: 'column', // Stack vertically on small screens
-          md: 'row', // Align horizontally on medium screens and up
+          xs: 'column',
+          sm: 'column', 
+          md: 'row', 
         },
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(to right, #23d6d4, #0a3758)', // Gradient background
+        background: 'linear-gradient(to right, #23d6d4, #0a3758)', 
         padding: 4,
         color: 'white',
         minHeight:"550px",
@@ -318,61 +292,87 @@ const ServicesHomeSmall = () => {
       
     >
       <Box
-             sx={{ maxWidth: { xs: '100%', md: '100%' }, marginBottom: { xs: 2, md: 0 } }}
-            style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', padding:"0%",marginBottom: "0px" }}
+             sx={{ maxWidth: { xs: '100%', md: '100%' }, marginBottom: { xs: 2, md: 2 },marginTop:{xs:1.5,md:1.5} }}
+            style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', padding:"0%", }}
         >
       
         <Typography
     gutterBottom
-    variant="h2"
     component="div"
     sx={{
-      margin: "2%",
+      margin: "1%",
       color: 'white',
       fontSize: {
-        xs: '2rem',  // 0px - 600px
-        sm: '2.5rem',  // 600px - 960px
-        md: '3rem',    // 960px - 1280px
-        lg: '3.5rem',    // 1280px - 1920px
-        xl: '4rem',    // 1920px and above
+        xs: '2rem',  
+        sm: '2.5rem',  
+        md: '2.75rem',    
+        lg: '3rem',    
+        xl: '4rem',  
       },
-      display: 'block',  // Ensure Typography is displayed as a block element
-       textAlign: 'center'
+      display: 'block',  
+       textAlign: 'center',
+       fontWeight:"bold"
     }}
   >
     Other Associated Services
   </Typography>
 
-  <Typography
-    variant="body"
-    sx={{
-      //margin:"2%",
-      color: 'white',
-      fontSize: {
-        xs: '1rem',   // 0px - 600px
-        sm: '1rem',     // 600px - 960px
-        md: '1.25rem',   // 960px - 1280px
-        lg: '1.5rem',   // 1280px - 1920px
-        xl: '1.5rem',   // 1920px and above
-      },
-      display: 'block',  // Ensure Typography is displayed as a block element
-      margin: '10px',  // Optional: Add some space between the title and description
-      textAlign: 'center',  
-    }}
-  >
+
+{/* Presenting as Box */}
+
+<Grid container spacing={5}  justifyContent="center" sx={{mt:"1.5%",mb:"1.5%"}}>
+          {
+            associatedServices.map((ele,i)=>{
+              return(
+                <Grid item sm={12} md={6} lg={3} key={i} style={{ display: 'flex', justifyContent: 'center',width:"100%" }}>
+        <Card
+          sx={{
+            width: {xs:'90%',sm:"80%",md:'85%',lg:"100%",xl:"90%"}, 
+            height:{xs:"200px",sm:"175px",md:"225px",lg:"250px"}, 
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between', 
+            padding: "2%",
+            marginBottom: "2%",
+            background: "none",
+            color: "white",
+            border: "2px solid white",
+            borderRadius: "15px",
+            textAlign: "center" 
+          }}
+        >
+                    <CardActionArea>
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div"
+                        style={{fontWeight:"bold"}}
+                        >
+                          {ele.title}
+                        </Typography>
+                        <Typography variant="h6" >
+                {ele.description}
+          </Typography>
+                      </CardContent>
+                   </CardActionArea>
+                   
+               </Card>
+  
+            </Grid>
+              )}
+          )}
+        </Grid>
+
+ 
     
-<b>●	Audio Segmentation:</b> Dividing audio into meaningful segments for analysis.<br/>
-<b>●	Image Annotations:</b> Detailed image data annotations.<br/>
-<b>●	Audio Verification:</b> Ensuring integrity and authenticity of audio data.<br/>
-<b>●	NLP Annotations: </b> Data Curation for NLPs project requirements.
-  </Typography><br/>
+
+  
+  <br/>
       <Button
             variant="contained"
             sx={{
-              backgroundColor: '#07145f', // Blue background color
-              borderRadius: '20px',       // Rounded corners
+              backgroundColor: '#07145f', 
+              borderRadius: '20px',      
               '&:hover': {
-                backgroundColor: '#7038b7', // Darker blue on hover
+                backgroundColor: '#7038b7', 
               },
             }}
             component={Link}
