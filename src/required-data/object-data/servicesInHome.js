@@ -55,3 +55,22 @@ export const associatedServices=[
         description:"Data Curation for NLPs project requirements."
     }
 ]
+
+export const button=[
+    {
+      name:"Explore More",
+      link:"/our-services"
+    },
+    {
+       name:"Contact Us",
+      link:"/contact-us"
+    },
+    {
+      name:"Message Us",
+      link:"/message-us"
+    },
+    {
+      name:"Register With Us",
+      link:"/register-yourself"
+    }
+  ]
