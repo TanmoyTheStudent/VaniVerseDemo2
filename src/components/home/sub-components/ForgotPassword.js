@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { Container, TextField, Button, Typography, Box } from '@mui/material';
 
@@ -24,7 +24,7 @@ const ForgotPassword = () => {
 
   return (
     <Container
-  maxWidth={false} // Set to 'false' to handle width entirely with custom styles
+  maxWidth={false} // Set to 'false' 
   sx={{
     mt: { xs: '120px', sm: '150px', md: '200px', xl: '250px' },
     mb: '10%',
@@ -32,8 +32,8 @@ const ForgotPassword = () => {
     boxShadow: 3,
     borderRadius: 2,
     backgroundColor: '#fff',
-    width: { xs: '90%', sm: '80%', md: '70%', lg: '60%', xl: '50%' }, // Responsive width
-    maxWidth: '100%' // Ensures container does not exceed the viewport width
+    width: { xs: '90%', sm: '80%', md: '70%', lg: '60%', xl: '50%' }, 
+    maxWidth: '100%' 
   }}
 >
 
