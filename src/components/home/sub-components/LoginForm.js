@@ -1,7 +1,39 @@
-import React from 'react';
+import { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { TextField, Button, Typography, Box, Container } from '@mui/material';
 
 const LoginForm = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [serverErrors, setServerErrors] = useState([]);
+
+  // Handling form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = { email, password };
+
+    try {
+      const response = await axios.post('http://localhost:3033/api/users/login', formData);
+      console.log(response);
+
+      alert('Login successful');
+      setServerErrors('');
+      setEmail('');
+      setPassword('');
+      navigate('/'); 
+    } catch (err) {
+      console.log(err);
+      if(err.response){
+        setServerErrors(err.response.data.errors);
+      }else{
+        setServerErrors(['Error in connection. Please try again later.'])
+      }
+     
+    }
+  };
+
   return (
     <Container
       maxWidth="xs"
@@ -13,29 +45,46 @@ const LoginForm = () => {
         backgroundColor: '#fff'
       }}
     >
-      <Box component="form">
+      <Box component="form" onSubmit={handleSubmit} >
         <TextField
           variant="outlined"
           margin="normal"
           required
           fullWidth
           id="email"
-          label="Email address or phone number"
+          label="Email address"
           name="email"
-          autoComplete="email"
-          autoFocus
+          //autoFocus
+          autoComplete="new-email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <TextField
           variant="outlined"
           margin="normal"
-          required
-          fullWidth
+           required
+           fullWidth
           name="password"
           label="Password"
           type="password"
           id="password"
-          autoComplete="current-password"
+          autoComplete="new-password"
+          //autoFocus
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
+
+        {serverErrors.length > 0 && (
+          <Box sx={{ color: 'red', mb: 2 }}>
+            These errors prevented the login:
+            <ul>
+              {serverErrors.map((error, index) => (
+                <li key={index}>{error.msg?error.msg:error}</li>
+              ))}
+            </ul>
+          </Box>
+        )}
+
         <Button
           type="submit"
           fullWidth
@@ -43,23 +92,23 @@ const LoginForm = () => {
           sx={{
             mt: 2,
             mb: 2,
-            backgroundColor: '#1877f2', // Blue color for the "Log in" button
+            backgroundColor: "#226dc7", 
             '&:hover': {
-              backgroundColor: '#0053b1',
+              backgroundColor: 'navy',
             },
             textTransform: 'none',
             fontSize: '1rem',
           }}
         >
-          Log in
+         <b>LOG IN</b> 
         </Button>
         <Typography
-          variant="body2"
           color="primary"
           align="center"
-          sx={{ mt: 2, mb: 2 }}
+          sx={{ mt: 2, mb: 2 ,cursor: 'pointer',fontSize: '1rem' }}
+          onClick={() => navigate('/forgot-password')}
         >
-          Forgotten password?
+          Forgot Password?
         </Typography>
         <Box sx={{ mt: 3, mb: 1, borderBottom: '1px solid #e0e0e0' }} />
         <Button
@@ -67,15 +116,18 @@ const LoginForm = () => {
           variant="contained"
           sx={{
             mt: 3,
-            backgroundColor: '#42b72a', // Green color for the "Create new account" button
+            backgroundColor: 'white', 
             '&:hover': {
-              backgroundColor: '#36a420',
+              backgroundColor: 'navy',
             },
             textTransform: 'none',
             fontSize: '1rem',
+            color:"#226dc7",
+            border: '1px solid #226dc7'
           }}
+          onClick={() => navigate('/register-yourself')}
         >
-          Create new account
+         <b>Create New Account</b> 
         </Button>
       </Box>
     </Container>
