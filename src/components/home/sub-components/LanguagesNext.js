@@ -1,7 +1,3 @@
-
-
-
-import React from 'react';
 import { Box, Typography } from '@mui/material';
 import WordCloud from "../../../required-data/assests/image/Language4.png"
 
@@ -15,13 +11,13 @@ const LanguagesNext = () => {
       sx={{
         display: 'flex',
         flexDirection: {
-          xs: 'column', // Stack vertically on extra-small screens
-          sm: 'column', // Stack vertically on small screens
-          md: 'row', // Align horizontally on medium screens and up
+          xs: 'column', 
+          sm: 'column', 
+          md: 'row', 
         },
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'linear-gradient(to right, #4c00ff, #1b1464)', // Gradient background
+        background: 'linear-gradient(to right, #4c00ff, #1b1464)', 
         padding: 4,
         color: 'white',
         minHeight:"500px",
@@ -30,14 +26,14 @@ const LanguagesNext = () => {
       }}
     >
       <Box sx={{ maxWidth: { xs: '100%', md: '50%' }, marginBottom: { xs: 2, md: 0 } }}>
-        <Typography variant="h4" component="div" sx={{ fontWeight: 'bold' }}>
+        <Typography variant="h4" component="div" sx={{ fontWeight: 'bold',textAlign:"center"}}>
           Languages Those Are In Our WishList
         </Typography>
 
         <Box 
           sx={{ 
             display: 'flex', 
-            flexWrap: 'wrap', // Wraps the languages names
+            flexWrap: 'wrap', 
             marginTop: 2 
           }}
         >
