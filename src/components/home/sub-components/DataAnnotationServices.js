@@ -1,55 +1,77 @@
-import { Container,Typography,Grid,Button,Card,CardActions,Box,Tab } from '@mui/material'
+import { Typography,Grid} from '@mui/material'
 import FlipCard from './FlipCard';
 import { servicesData } from '../../../required-data/object-data/serviceData';
 
 
 function DataAnnotationServices() {
 
-
-
   return (
     <div>
       <div style={{margin:"20px",marginBottom:"20px"}}>  
         <Typography
-        //variant="h3"
         sx={{
           fontSize: {
-            xs: '1rem',  // 0px - 600px
-            sm: '1.25rem',  // 600px - 960px
-            md: '1.5rem',  // 960px - 1280px
-            lg: '1.5rem',  // 1280px - 1920px
-            xl: '1.75rem',  // 1920px and above
+            xs: '1.35rem', 
+            sm: '1.4rem',  
+            md: '1.5rem',  
+            lg: '1.75rem',  
+            xl: '2rem',  
           },
           marginTop:"30px",
-          textAlign: "justify"
+          textAlign: {xs:"center",sm:"justify"}
           
         }} >
     	We offer a comprehensive suite of data curation in Indian languages tailored for various AI applications, including:
       </Typography><br/>
 
      <Typography
-        //variant="h3"
         sx={{
           fontSize: {
-            xs: '1rem',  // 0px - 600px
-            sm: '1rem',  // 600px - 960px
-            md: '1rem',  // 960px - 1280px
-            lg: '1.25rem',  // 1280px - 1920px
-            xl: '1.5rem',  // 1920px and above
+            xs: '1.25rem',  
+            sm: '1.35rem',  
+            md: '1.4rem',  
+            lg: '1.4rem', 
+            xl: '1.75rem',  
           },
           margin:"10px",
-          textAlign: "justify"
+          textAlign: {xs:"left",sm:"justify"},
+          display: { xs: 'none', sm: 'block' }
           
         }} >
-<b>•	Conversational Audio Recording:</b> Extempore audio recording based on the requirements of language, dialect, gender, age of the speaker and the recording environment of the audio.<br/>
-<b>•	Studio Audio recording:</b> Read Speech recording by the native people based on the requirements of language, dialect, gender, age of the speaker, expressive story reading.<br/>
+<b>• Conversational Audio Recording:</b> Extempore audio recording based on the requirements of language, dialect, gender, age of the speaker and the recording environment of the audio.<br/>
+<b>• Studio Audio recording:</b> Read Speech recording by the native people based on the requirements of language, dialect, gender, age of the speaker, expressive story reading.<br/>
 <b>• Transcription:</b> Transcription of audio by people native to the language into accurate, readable text.<br/>
-<b>• Translation :</b> Comprehensive text curation and enhancing and translating text with the help of language experts for various applications.<br/>
-<b>•	Audio Verification:</b> Ensuring integrity and authenticity of audio data.<br/>
-<b>•	Audio Segmentation:</b> Dividing audio into meaningful segments for analysis.<br/>
-<b>•	Image Annotations: </b>Detailed image data annotations.<br/>
-<b>•	Custom Data Curation: </b>We meticulously curate custom datasets in both audio and text to ensure accuracy and relevance for your AI models <br/>
-<b>•	NLP Annotations:</b> Data Curation for NLPs project requirements. <br/><br/><br/>
+<b>• Translation:</b> Comprehensive text curation and enhancing and translating text with the help of language experts for various applications.<br/>
+<b>• Audio Verification:</b> Ensuring integrity and authenticity of audio data.<br/>
+<b>• Audio Segmentation:</b> Dividing audio into meaningful segments for analysis.<br/>
+<b>• Image Annotations:</b> Detailed image data annotations.<br/>
+<b>• Custom Data Curation:</b> We meticulously curate custom datasets in both audio and text to ensure accuracy and relevance for your AI models <br/>
+<b>• NLP Annotations:</b> Data Curation for NLPs project requirements. <br/><br/><br/>
+</Typography>
+
+<Typography
+        sx={{
+          fontSize: {
+            xs: '1.25rem', 
+            sm: '1.35rem',
+            md: '1.4rem',  
+            lg: '1.4rem',  
+            xl: '1.75rem', 
+          },
+          margin:"0px",
+          textAlign: {xs:"center",sm:"justify"},
+          display: { xs: 'block', sm:'none'  }
+          
+        }} >
+<b>• Conversational Audio Recording:</b><br/> Extempore audio recording based on the requirements of language, dialect, gender, age of the speaker and the recording environment of the audio.<br/><br/>
+<b>• Studio Audio recording:</b><br/> Read Speech recording by the native people based on the requirements of language, dialect, gender, age of the speaker, expressive story reading.<br/><br/>
+<b>• Transcription:</b><br/> Transcription of audio by people native to the language into accurate, readable text.<br/><br/>
+<b>• Translation:</b><br/> Comprehensive text curation and enhancing and translating text with the help of language experts for various applications.<br/><br/>
+<b>• Audio Verification:</b><br/> Ensuring integrity and authenticity of audio data.<br/><br/>
+<b>• Audio Segmentation:</b><br/> Dividing audio into meaningful segments for analysis.<br/><br/>
+<b>• Image Annotations:</b><br/> Detailed image data annotations.<br/><br/>
+<b>• Custom Data Curation:</b><br/> We meticulously curate custom datasets in both audio and text to ensure accuracy and relevance for your AI models <br/><br/>
+<b>• NLP Annotations:</b><br/> Data Curation for NLPs project requirements. <br/><br/><br/>
 </Typography>
 
 </div>
@@ -57,17 +79,16 @@ function DataAnnotationServices() {
 <div 
   className="animated-div" 
   style={{
-  minHeight: "500px",   // Minimum height of 500px
-  height: 'auto',       // Let the height adjust based on content
+  minHeight: "500px",   
+  height: 'auto',       
   maxHeight: "2000px",  
   width: '99%',
-  //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  padding: '10px',       // Added some padding for spacing
-  //margin: "10px auto ",   // Centered the div horizontally
-  overflowY: "auto",      // Allow vertical scrolling if content overflows
+  padding: '10px',       
+  //margin: "10px auto ",  
+  overflowY: "auto",      
  
 }}>
   
