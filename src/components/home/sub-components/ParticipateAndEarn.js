@@ -77,7 +77,7 @@ function ParticipateAndEarn() {
                             xl: '1.75rem', 
                           },
                         }}>
-                        It is our small initiative to employ India. In India everyone is strong at his/her mothertongue. By Sharing their knowledge and language skills for the development of their own language, they can earn money. Through this process students, unemployed, house-wives, senior citizens can earn some, that may help them to become financially independent.
+                        It is our small initiative to employ India. In India everyone is strong at his/her mothertongue. By Sharing their knowledge and language skills for the development of their own language, they can earn money. Through this process students, unemployed, senior citizens, house-wives can earn some, that may help them to become financially independent.
                         </Typography>
                       </CardContent>
                    </CardActionArea><br/>
