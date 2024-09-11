@@ -1,5 +1,5 @@
 import { Divider } from '@mui/material'
-import { Container,Typography,Grid,Button,Card,CardActions } from '@mui/material'
+import { Container,Typography,Grid,Card } from '@mui/material'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
@@ -22,14 +22,20 @@ function AboutUs() {
   maxHeight: "1500px",  
   width: '100%',
   display: 'flex',
-   alignItems: 'center', // Centers vertically
+   alignItems: 'center',
    justifyContent: "center",
-  padding: '10px',       // Added some padding for spacing
-  margin: " auto",   // Centered the div horizontally
-  overflowY: "auto"
+  padding: '10px',       
+  margin: " auto",
+  marginTop:"8%",
+  overflowY: "auto",
+  
+  
 }}>
 
-<Container style={{height:"100%"}}>
+<Container sx={{height:"100%",
+
+    marginTop:{xs:"5%",md:"3%",lg:0}
+}}>
 <Grid
       container
       direction="column"
@@ -46,14 +52,14 @@ function AboutUs() {
             borderRadius: '15px', 
             boxShadow: '0 10px 20px rgba(0, 0, 0, 0.5)'}} align="center">
      <Typography
-        variant="h3"
+       
         sx={{
           fontSize: {
-            xs: '1.25rem',  // 0px - 600px
-            sm: '1.5rem',  // 600px - 960px
-            md: '2rem',  // 960px - 1280px
-            lg: '2.5rem',  // 1280px - 1920px
-            xl: '3rem',  // 1920px and above
+            xs: '1.5rem',  
+            sm: '1.5rem',  
+            md: '2.25rem', 
+            lg: '2.5rem',  
+            xl: '3rem',  
           },
           margin: 2,
           color:"#2472d1",
@@ -67,11 +73,11 @@ function AboutUs() {
        
         sx={{
           fontSize: {
-            xs: '1rem',  // 0px - 600px
-            sm: '1rem',  // 600px - 960px
-            md: '1.25rem',  // 960px - 1280px
-            lg: '1.5rem',  // 1280px - 1920px
-            xl: '1.5rem',  // 1920px and above
+            xs: '1.25rem',  
+            sm: '1.35rem',  
+            md: '1.4rem',  
+            lg: '1.5rem',  
+            xl: '1.75rem',  
           },
           marginBottom: 3,
           textAlign:"center"}}
@@ -94,8 +100,8 @@ function AboutUs() {
 
         <Divider
           sx={{
-            backgroundColor: 'blue', // Sets the color of the divider
-            height: '5px',           // Adjust the thickness of the divider
+            backgroundColor: 'blue', 
+            height: '5px',           
             margin: '10px 0px', 
             marginTop:"10%"       
           }}/>
@@ -176,20 +182,22 @@ function AboutUs() {
           margin: '10px 0px'
       }}/>
 <Typography
-      //variant="h3"
       sx={{
         fontSize: {
-          xs: '1rem',  // 0px - 600px
-          sm: '1.25rem',  // 600px - 960px
-          md: '1.5rem',  // 960px - 1280px
-          lg: '1.5rem',  // 1280px - 1920px
-          xl: '1.75rem',  // 1920px and above
+          xs: '1.25rem', 
+          sm: '1.35rem', 
+          md: '1.4rem',  
+          lg: '1.5rem',  
+          xl: '1.75rem',  
         },
         margin:"50px",
         marginTop:"5%",
         textAlign: "justify",
         lineHeight: '1.8',
-        wordSpacing:"5px" 
+        wordSpacing:"5px" ,
+        '@media (max-width: 400px)': {
+        textAlign:"center"
+   },
         
       }} >
     {ele.description}
@@ -202,9 +210,9 @@ function AboutUs() {
    
           <Divider
           sx={{
-            backgroundColor: 'blue', // Sets the color of the divider
-            height: '5px',           // Adjust the thickness of the divider
-            margin: '10px 0px',        // Optional: adds margin around the divider
+            backgroundColor: 'blue', 
+            height: '5px',           
+            margin: '10px 0px',   
           }}/>
         <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>OUR CONTACT</h1>
         <Divider
