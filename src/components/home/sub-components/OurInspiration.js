@@ -23,9 +23,9 @@ function OurInspiration() {
           <div style={{marginBottom:"150px"}}>
         <Divider
           sx={{
-            backgroundColor: 'blue', // Sets the color of the divider
-            height: '5px',           // Adjust the thickness of the divider
-            margin: '10px 0px',        // Optional: adds margin around the divider
+            backgroundColor: 'blue', 
+            height: '5px',          
+            margin: '10px 0px',       
           }}/>
         <h1 className='d-flex flex-column align-items-center justify-content-center' style={{color:"#643cca"}}>OUR INSPIRATION</h1>
         <Divider
@@ -38,11 +38,12 @@ function OurInspiration() {
     <Container >
         <Grid container spacing={0}  justifyContent="center" style={{marginBottom:"4%"}}>
         <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center' }}>
-                  <Card sx={{ width: '100%',height:"100%", padding: '20px', margin: '10px'}} align="center" >
+                  <Card sx={{ width: '100%',height:"100%", padding: '10px', margin: '10px'}} align="center" >
                     <CardActionArea onClick={handleClickOpen}>
                       <CardMedia
                         component="img"
-                        height="500"
+                        width="90%"
+                        height="500px"
                         image={Map}
                         alt="map"
                         style={{borderRadius:"50px"}}
@@ -62,7 +63,11 @@ function OurInspiration() {
                      
                       <CardContent>
                         
-                        <Typography variant="body" color="black" style={{fontFamily:"Georgia"}}>
+                        <Typography  
+                        sx={{
+                          fontSize:{xs:"1.25rem",sm:"1.35rem",md:"1rem"}
+                        }}
+                        >
                          India(Bharat) is a land of diversity. Langauage is a key elememt of this diversity. We have 22 scheduled languages, 121+ languages, and many dialects in India. <br/><br/>
                         As Indian we are proud for this diversity, but at the same time these many languages sometimes cause communication gap.For this reason, native people lag behind from development.We need to overcome  this issue. Not only that,in this globalised world some languages are losing its charm,can disappear soon. It is high time to preserve these languages.<br/><br/>
                         AI can help to solve these issues.With the implementation of NLP(Natural Language Processing), we can overcome the gap of communication among native speakers, as well as, we will able to preserve the native languages. For that we need a vast amount of various data of every Indian language, and this inspires us to start such work.
