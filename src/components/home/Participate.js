@@ -23,7 +23,8 @@ function Participate() {
   return (
     <div>
 
-        <Container style={{marginBottom:"100px",marginTop:"50px"}}>
+        <Container sx={{marginBottom:"100px",marginTop:{xs:"90px",sm:"125px",xl:"150px"}
+      }}>
         <Grid container spacing={0}  justifyContent="center" >
         <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center' }}>
         <Card sx={{ width: '100%',height:"100%", padding: {xs:'0px',md:"10px"}, margin: {xs:'0px',md:"10px"},boxShadow:"none"}} align="center" >
@@ -35,16 +36,23 @@ function Participate() {
                           marginTop:
                           {
                           xs: '25px',  
-                          md: '50px',
+                          md: '40px',
                           lg: "80px"
                         },marginBottom:"30px",fontWeight:"bold",textAlign: "center"}}>
                         Join Our Team of Annotators and Earn While You Contribute!
                         </Typography>
                         <Typography variant="h6" 
-                            sx={{fontFamily:"Georgia",
+                            sx={{
+                              fontSize: {
+                                xs: '1.25rem',  
+                                sm: '1.35rem',
+                                md: '1.4rem',
+                                lg:'1.4rem',
+                                xl:"1.75rem"
+                              },
                               textAlign:{
                                 xs:"justify",
-                                md:"center"
+                                md:"justify"
                               }
                           }}  
                         >
@@ -61,7 +69,14 @@ function Participate() {
                         component="img"
                         image={EarnImage2}
                         alt="services image"
-                        style={{ borderRadius: "20px", width: '100%', height: 'auto' }}
+                        sx={{ borderRadius: "20px", width: {xs:'100%',sm:'70%',md:'90%'}, height: 'auto',
+                        marginTop:
+                        {
+                        xs: '10px',  
+                        md: '30px',
+                        lg: "50px"
+                      }
+                     }}
                       />
                       <CardContent>
                         <Typography variant="body2" color="text.secondary">
@@ -79,7 +94,7 @@ function Participate() {
      <div  style={{
   minHeight: "500px",   // Minimum height of 500px
   height: 'auto',       // Let the height adjust based on content
-  maxHeight: "2500px",  
+  maxHeight: "3500px",  
   width: '99%',
   //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
@@ -104,9 +119,24 @@ function Participate() {
             marginBottom:"50px"
         }}/>
 
-<Typography variant='h6' align="justify" style={{margin:"4%",color:"white",fontWeight: '',fontFamily:"sans-serif"}}>
+<Typography align="justify" 
+sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
+  fontSize: {xs: '1.25rem',sm: '1.35rem',md: '1.4rem',lg:'1.4rem',xl:"1.75rem"},
+  '@media (max-width: 400px)': {
+              textAlign:"left"
+        }
+  }}>
 <br/>
-<h3 style={{textAlign:"center"}}><b>Why Become an Annotator?</b></h3><br/>
+<h2
+  style={{
+    textAlign: 'center',
+    textDecoration: 'underline', // Adds the underline
+    textUnderlineOffset: '7px', // Adjusts the space between text and underline
+  }}
+>
+  <b>Why Become an Annotator?</b>
+</h2>
+<br/>
 <b>• Flexible Work Hours :</b> Enjoy the freedom to work at your own pace and schedule. Whether you’re a student, a homemaker, professional or someone looking for a side hustle, our annotation tasks fit seamlessly into your lifestyle. Whether you have a few hours a day or can dedicate more time, our platform allows you to tailor your work schedule to fit your lifestyle.<br/><br/>
  
 <b>• Diverse Projects :</b> Engage in a variety of annotation tasks that cover different Indian languages. From transcribing audio to labeling text data to data curation, you’ll find engaging tasks that keep your work interesting and dynamic and enhance your skills and knowledge.<br/><br/>
@@ -124,12 +154,30 @@ function Participate() {
 <div 
   style={{
     marginTop:"5%",
-    marginBottom:"15%"
+    marginBottom:"15%",
+    justifyContent:"center"
     }}
 >  
-<Typography variant='h6' align="justify" style={{margin:"4%",fontFamily:"sans-serif"}}>
+
+<Typography align="justify" 
+sx={{margin:{xs:"3%",sm:"4%",md:"5%"},fontFamily:"sans-serif",
+  fontSize: {xs: '1.25rem',sm: '1.35rem',md: '1.4rem',lg:'1.4rem',xl:"1.75rem"},
+  '@media (max-width: 400px)': {
+              textAlign:"left"
+        }
+  }}>
 <br/>
-<h2 style={{textAlign:"center"}}><b>Who Can Participate?</b></h2><br/>
+<h2
+  style={{
+    textAlign: 'center',
+    textDecoration: 'underline', // Adds the underline
+    textUnderlineOffset: '7px', // Adjusts the space between text and underline
+  }}
+>
+<b>Who Can Participate?</b>
+</h2>
+
+<br/>
 <b>• Language Enthusiasts :</b> If you have a strong command or fluency in any Indian language and a passion for linguistics, we want you!
 <br/><br/>
  
@@ -146,7 +194,7 @@ function Participate() {
      <div  style={{
   minHeight: "500px",   // Minimum height of 500px
   height: 'auto',       // Let the height adjust based on content
-  maxHeight: "2500px",  
+  maxHeight: "3500px",  
   width: '99%',
   //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
@@ -158,15 +206,32 @@ function Participate() {
   background:'linear-gradient(to right, #4c00ff, #1b1464)'
 }}>
 
-    <Container style={{marginBottom:"50px"}}>
-      
-        <Typography variant='h4' align='center' style={{margin:"20px",color:"white",fontWeight: 'bold',fontFamily:"sans-serif",
-          marginTop:"5%",marginBottom:"5%"}}>
-              Activities in which you can participate
-        </Typography>
-        
+<Container style={{marginBottom:"50px"}}>
 
-<Typography variant='h6' align='center' sx={{margin:"4%",color:"white",fontWeight: "initial",fontFamily:"sans-serif",textAlign:{xs:"justify",md:"center"}}}>
+
+<h2
+  style={{
+    textAlign: 'center',
+    textDecoration: 'underline', // Adds the underline
+    textUnderlineOffset: '7px', // Adjusts the space between text and underline
+    color:"white",
+    fontFamily:"sans-serif",
+    marginTop:"5%"
+  }}
+>
+<b>Activities in which you can participate</b>
+</h2><br/>
+  
+      
+
+<Typography 
+sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
+  fontSize: {xs: '1.25rem',sm: '1.35rem',md: '1.4rem',lg:'1.4rem',xl:"1.75rem"},textAlign:{xs:"justify",md:"center"},
+  '@media (max-width: 400px)': {
+    textAlign:"center"
+},
+  }}>
+
        In our data annotation program we would initiate multiple activities based on the need of the project. If you are eligible, you can participate in those activities, and can earn money accordingly. Some of the common activities currently going on are mentioned below. Once again it is mentioned that the activities would change based on the need of the project.        
   </Typography>
         
@@ -175,7 +240,7 @@ function Participate() {
             earnData.map((ele,i)=>{
               return(
                 <Grid item sm={12} md={6} lg={4} key={i} style={{ display: 'flex', justifyContent: 'center' }}>
-                  <Card sx={{ maxWidth: 345 }} align="center" style={{padding:"10px",marginBottom:"20px"}}>
+                  <Card sx={{ maxWidth: 500 }} align="center" style={{padding:"10px",marginBottom:"20px"}}>
                     <CardActionArea>
                       <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
@@ -225,7 +290,7 @@ function Participate() {
   backgroundColor:"ButtonHighlight",
   minHeight: "500px",   // Minimum height of 500px
   height: 'auto',       // Let the height adjust based on content
-  maxHeight: "2500px",  
+  maxHeight: "3500px",  
   width: '100%',
   //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
@@ -246,7 +311,6 @@ function Participate() {
                   boxShadow: 'none',
                   background:"none"}} align="center" >
        <Typography
-        variant="h3"
         sx={{
           fontSize: {
             xs: '2.5rem',  // 0px - 600px
@@ -269,14 +333,17 @@ function Participate() {
         sx={{
           fontSize: {
             xs: '1.25rem',  // 0px - 600px
-            sm: '1.25rem',  // 600px - 960px
-            md: '1.5rem',  // 960px - 1280px
+            sm: '1.35rem',  // 600px - 960px
+            md: '1.4rem',  // 960px - 1280px
             lg: '1.5rem',  // 1280px - 1920px
             xl: '2rem',  // 1920px and above
           },
           marginBottom: "8%",
-          textAlign:{xs:"justify",md:"center"}
-        }}
+          textAlign:{xs:"justify",md:"center"},
+          '@media (max-width: 400px)': {
+              textAlign:"center"
+          }
+      }}
       >
        Become a part of our growing community of annotators and contribute to the exciting field of Indian language processing. Together, we can contribute to a future where technology understands and respects the richness of Indian languages.
       </Typography>
@@ -289,7 +356,6 @@ function Participate() {
                   boxShadow: 'none',
                   background:"none"}} align="center" >
        <Typography
-        variant="h3"
         sx={{
           fontSize: {
             xs: '1.5rem',  // 0px - 600px
@@ -312,14 +378,17 @@ function Participate() {
         sx={{
           fontSize: {
             xs: '1.25rem',  // 0px - 600px
-            sm: '1.25rem',  // 600px - 960px
+            sm: '1.35rem',  // 600px - 960px
             md: '1.25rem',  // 960px - 1280px
             lg: '1.25rem',  // 1280px - 1920px
             xl: '1.25rem',  // 1920px and above
           },
           marginBottom: 3,
-          textAlign:"justify"
-        }}
+          textAlign:"justify",
+          '@media (max-width: 400px)': {
+              textAlign:"left"
+        }
+      }}
       >
        <b>1. Sign Up :</b> Visit our website and create an account. It’s quick and easy!
 <br/><br/>
@@ -344,7 +413,7 @@ Sign up now and start your journey with us as an annotator! Your expertise and p
                }} 
                align="center" 
                style={{padding:"10px",marginBottom:"20px"}}>
-                   <AnnotatorRegistration/>
+                <AnnotatorRegistration/>
                    
                </Card>
 
