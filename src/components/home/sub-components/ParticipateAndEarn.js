@@ -20,7 +20,7 @@ function ParticipateAndEarn() {
     </Paper>
 
     <Container>
-        <Grid container spacing={0}  justifyContent="center" sx={{marginTop:"2%",marginBottom:{xs:"100px",md:"8%"} }}>
+        <Grid container spacing={0}  justifyContent="center" sx={{marginTop:"2%",marginBottom:{xs:"100px",md:"10%"} }}>
         <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center',marginTop:"30px" }}>
                   <Card sx={{ width: '100%',height:"100%", padding: '20px', margin: '0px',boxShadow:"none"}} align="center" >
                     <CardActionArea>
