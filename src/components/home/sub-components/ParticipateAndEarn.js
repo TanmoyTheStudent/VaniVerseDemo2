@@ -1,28 +1,11 @@
-import { Container,Typography,Grid,Button,Card,CardActions,Paper } from '@mui/material'
+import { Container,Typography,Grid,Button,Card,Paper } from '@mui/material'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import EarnImage from "../../../required-data/assests/image/earnMoney.jpeg"
 import { Link } from 'react-router-dom';
+import { design } from '../../../required-data/object-data/servicesInHome';
 
-const design={
-    padding: 2,
-    textAlign: 'center',
-    position: 'relative',
-    margin: 2,
-    backgroundColor: '#f3f1ee',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-    '&::after': {
-      content: '""',
-      display: 'block',
-      width: '100%',
-      height: '3px',
-      backgroundColor: '#008080',
-      position: 'absolute',
-      bottom: 0,
-      left: 0,
-    },
-  }
 
 function ParticipateAndEarn() {
   return (
@@ -37,16 +20,16 @@ function ParticipateAndEarn() {
     </Paper>
 
     <Container>
-        <Grid container spacing={0}  justifyContent="center" style={{margin:"0px",marginTop:"50px",marginBottom:"100px"}}>
+        <Grid container spacing={0}  justifyContent="center" sx={{marginTop:"2%",marginBottom:{xs:"100px",md:"8%"} }}>
         <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center',marginTop:"30px" }}>
                   <Card sx={{ width: '100%',height:"100%", padding: '20px', margin: '0px',boxShadow:"none"}} align="center" >
                     <CardActionArea>
                       <CardMedia
                         component="img"
-                        height="90%"
                         image={EarnImage}
                         alt="services image"
-                        style={{borderRadius:"50px"}}
+                        sx={{width:{sx:"90%",sm:"70%",md:"100%",lg:"90%"},borderRadius:"50px"}}
+                       
                       />
                       <CardContent>
                         <Typography variant="body2" color="text.secondary">
@@ -58,26 +41,53 @@ function ParticipateAndEarn() {
                </Card>
               </Grid>
                <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center' }}>
-               <Card sx={{ width: '100%',height:"100%", padding: '20px', marginTop: '0px',boxShadow:"none"}} align="center" >
+               <Card sx={{ width: '100%',height:"100%", padding: {sx:"10px",md:"0px",lg:"20px"}, marginTop: {xs:0,md:"5%",lg:"2.5%",xl:"1.5%"},boxShadow:"none"}} align="center" >
                     <CardActionArea>
                      
                       <CardContent style={{marginTop:"5%"}}>
-                        <Typography gutterBottom variant="h4" component="div" color="black" style={{fontFamily:"Georgia"}}>
+                        <Typography 
+                        gutterBottom 
+                        component="div" 
+                        sx={{
+                          margin: {sx:"1%",md:0,lg:"2%"},
+                          fontSize: {
+                            xs: '2rem',  
+                            sm: '2.25rem',  
+                            md: '2.25rem',    
+                            lg: '2.5rem',
+                            xl: '3rem',   
+                          },
+                           textAlign: 'center',
+                           fontWeight:"bold"
+                        }}
+                        >
                           Participate and Earn
-                        </Typography><br/>
-                        <Typography variant="h6" color="black" style={{fontFamily:"Georgia"}}>
-                        It is our small initiative to employ India.In India everyone is strong at his/her mothertongue. 
-                        By Sharing their knowledge and language skills for the development of their own language, they can earn money.Through this process students, unemployed, house-wives, senior citizens can earn some, that may help them to become financially independent.
+                        </Typography>
+                        <Typography  
+                         sx={{
+                          textAlign:{
+                            xs:"justify",
+                            
+                          },
+                          fontSize: {
+                            xs: '1.25rem', 
+                            sm: '1.35rem',
+                            md: '1.35rem',   
+                            lg: '1.5rem',   
+                            xl: '1.75rem', 
+                          },
+                        }}>
+                        It is our small initiative to employ India. In India everyone is strong at his/her mothertongue. By Sharing their knowledge and language skills for the development of their own language, they can earn money. Through this process students, unemployed, house-wives, senior citizens can earn some, that may help them to become financially independent.
                         </Typography>
                       </CardContent>
                    </CardActionArea><br/>
                    <Button
             variant="contained"
             sx={{
-              backgroundColor: '#07145f', // Blue background color
-              borderRadius: '20px',       // Rounded corners
+              backgroundColor: '#07145f', 
+              borderRadius: '20px',     
               '&:hover': {
-                backgroundColor: '#7038b7', // Darker blue on hover
+                backgroundColor: '#7038b7', 
               },
             }}
             component={Link}
