@@ -92,17 +92,17 @@ function Participate() {
 
 
      <div  style={{
-  minHeight: "500px",   // Minimum height of 500px
-  height: 'auto',       // Let the height adjust based on content
+  minHeight: "500px",   
+  height: 'auto',      
   maxHeight: "3500px",  
   width: '99%',
   //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  //padding: '10px',       // Added some padding for spacing
-  //margin: "10px auto",   // Centered the div horizontally
-  overflowY: "auto" ,     // Allow vertical scrolling if content overflows
+  //padding: '10px',       
+  //margin: "10px auto",   
+  overflowY: "auto" ,   
   background:'linear-gradient(to right, #4c00ff, #1b1464)'
 }}>
 
@@ -130,8 +130,8 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
 <h2
   style={{
     textAlign: 'center',
-    textDecoration: 'underline', // Adds the underline
-    textUnderlineOffset: '7px', // Adjusts the space between text and underline
+    textDecoration: 'underline', 
+    textUnderlineOffset: '7px', 
   }}
 >
   <b>Why Become an Annotator?</b>
@@ -170,8 +170,8 @@ sx={{margin:{xs:"3%",sm:"4%",md:"5%"},fontFamily:"sans-serif",
 <h2
   style={{
     textAlign: 'center',
-    textDecoration: 'underline', // Adds the underline
-    textUnderlineOffset: '7px', // Adjusts the space between text and underline
+    textDecoration: 'underline', 
+    textUnderlineOffset: '7px', 
   }}
 >
 <b>Who Can Participate?</b>
@@ -192,17 +192,17 @@ sx={{margin:{xs:"3%",sm:"4%",md:"5%"},fontFamily:"sans-serif",
   </div>
 
      <div  style={{
-  minHeight: "500px",   // Minimum height of 500px
-  height: 'auto',       // Let the height adjust based on content
+  minHeight: "500px",   
+  height: 'auto',       
   maxHeight: "3500px",  
   width: '99%',
   //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  padding: '10px',       // Added some padding for spacing
-  margin: "10px auto",   // Centered the div horizontally
-  overflowY: "auto" ,     // Allow vertical scrolling if content overflows
+  padding: '10px',       
+  margin: "10px auto",   
+  overflowY: "auto" ,     
   background:'linear-gradient(to right, #4c00ff, #1b1464)'
 }}>
 
@@ -212,8 +212,8 @@ sx={{margin:{xs:"3%",sm:"4%",md:"5%"},fontFamily:"sans-serif",
 <h2
   style={{
     textAlign: 'center',
-    textDecoration: 'underline', // Adds the underline
-    textUnderlineOffset: '7px', // Adjusts the space between text and underline
+    textDecoration: 'underline', 
+    textUnderlineOffset: '7px',
     color:"white",
     fontFamily:"sans-serif",
     marginTop:"5%"
@@ -266,7 +266,7 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
               borderRadius: '20px',    
               border: '2px solid gold', 
               '&:hover': {
-                backgroundColor: '#7038b7', // Darker blue on hover
+                backgroundColor: '#7038b7', 
               },
             }}
             style={{marginTop:"40px"}} 
@@ -288,17 +288,17 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
 <div 
  style={{
   backgroundColor:"ButtonHighlight",
-  minHeight: "500px",   // Minimum height of 500px
-  height: 'auto',       // Let the height adjust based on content
+  minHeight: "500px",   
+  height: 'auto',      
   maxHeight: "3500px",  
   width: '100%',
   //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  padding: '10px',       // Added some padding for spacing
-  margin: " auto",   // Centered the div horizontally
-  overflowY: "auto"      // Allow vertical scrolling if content overflows
+  padding: '10px',      
+  margin: " auto",  
+  overflowY: "auto"     
 }}>
 
 
@@ -313,11 +313,11 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
        <Typography
         sx={{
           fontSize: {
-            xs: '2.5rem',  // 0px - 600px
-            sm: '3.5rem',  // 600px - 960px
-            md: '3.5rem',  // 960px - 1280px
-            lg: '4rem',  // 1280px - 1920px
-            xl: '4rem',  // 1920px and above
+            xs: '2.5rem',  
+            sm: '3.5rem',  
+            md: '3.5rem',  
+            lg: '4rem',  
+            xl: '4rem',  
           },
           margin: 0,
           color:"blue",
@@ -332,11 +332,11 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
        
         sx={{
           fontSize: {
-            xs: '1.25rem',  // 0px - 600px
-            sm: '1.35rem',  // 600px - 960px
-            md: '1.4rem',  // 960px - 1280px
-            lg: '1.5rem',  // 1280px - 1920px
-            xl: '2rem',  // 1920px and above
+            xs: '1.25rem',  
+            sm: '1.35rem',  
+            md: '1.4rem', 
+            lg: '1.5rem', 
+            xl: '2rem',  
           },
           marginBottom: "8%",
           textAlign:{xs:"justify",md:"center"},
@@ -358,11 +358,11 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
        <Typography
         sx={{
           fontSize: {
-            xs: '1.5rem',  // 0px - 600px
-            sm: '1.5rem',  // 600px - 960px
-            md: '1.75rem',  // 960px - 1280px
-            lg: '2rem',  // 1280px - 1920px
-            xl: '2rem',  // 1920px and above
+            xs: '1.5rem',  
+            sm: '1.5rem', 
+            md: '1.75rem',  
+            lg: '2rem', 
+            xl: '2rem',
           },
           margin: 0,
           color:"black",
@@ -377,11 +377,11 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
        
         sx={{
           fontSize: {
-            xs: '1.25rem',  // 0px - 600px
-            sm: '1.35rem',  // 600px - 960px
-            md: '1.25rem',  // 960px - 1280px
-            lg: '1.25rem',  // 1280px - 1920px
-            xl: '1.25rem',  // 1920px and above
+            xs: '1.25rem',  
+            sm: '1.35rem',  
+            md: '1.25rem', 
+            lg: '1.25rem',  
+            xl: '1.25rem', 
           },
           marginBottom: 3,
           textAlign:"justify",
