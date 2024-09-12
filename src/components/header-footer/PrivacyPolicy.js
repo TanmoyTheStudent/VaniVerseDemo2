@@ -2,7 +2,7 @@
 
 function PrivacyPolicy() {
   return (
-    <div className="m-3" style={{marginTop:"150px"}}>
+    <div  style={{margin:"30px",marginTop:"150px",marginBottom:"50px"}}>
       <p style={{ textAlign: "center", color: "blue" }}>
         <b><h2>Privacy Policy</h2></b>
         <span>Last updated: 2024-01-21</span>
