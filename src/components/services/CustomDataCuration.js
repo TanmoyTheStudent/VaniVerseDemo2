@@ -78,7 +78,7 @@ function CustomDataCuration() {
       >
        
   
-        <Box sx={{ maxWidth: '100%',margin:0,padding:"50px",alignItems:'center' }}>
+        <Box sx={{ maxWidth: '100%',margin:0,padding:"0px",alignItems:'center' }}>
           <Typography variant="h4" component="div" sx={{ fontWeight: 'bold',
            fontSize: {
             xs: '2rem',   
