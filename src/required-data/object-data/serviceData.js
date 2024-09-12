@@ -19,11 +19,9 @@ export const servicesData=[
         id:2,
         title:(
             <>
-                <span>Studio/</span>
+                <span>Audio</span>
                 <br />
-                <span>Conversational</span>
-                <br />
-                <span>Audio Recording</span>
+                <span>Recording</span>
             </>
         ),
         description:"Audio recording of the written text based on the requirements of language, dialect, gender, age of the speaker and the recording environment of the audio.",
