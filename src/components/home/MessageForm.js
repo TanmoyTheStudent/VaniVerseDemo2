@@ -22,7 +22,7 @@ const MessageForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here, you can handle form submission logic, such as sending the data to a server.
+    //submission logic
     console.log('Form Data:', formData);
     // Reset form after submission
     setFormData({
@@ -54,9 +54,9 @@ const MessageForm = () => {
       <Typography variant="h4" gutterBottom>
         Get in touch
       </Typography>
-      <Link href="mailto:vanianverse@gmail.com" sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+      <Link href="mailto:vaniandverse@gmail.com" sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
         <EmailIcon sx={{ mr: 1 }} />
-        vanianverse@gmail.com
+        vaniandverse@gmail.com
       </Link>
       <form onSubmit={handleSubmit} style={{ width: '100%' }}>
         <Grid container spacing={2}>
