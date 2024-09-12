@@ -16,7 +16,7 @@ function Footer() {
                     Data Annotation For AI
                 </p>
                     <div className="footer-icons">
-                        <Link to="https://www.linkedin.com/" target="_blank" color="inherit">
+                        <Link to="https://www.linkedin.com/company/vani-and-verse/" target="_blank" color="inherit">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </Link>
                         <Link to="https://www.instagram.com/" color="inherit" target="_blank">
