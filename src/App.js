@@ -20,7 +20,7 @@ import AudioRecording from "./components/services/AudioRecording";
 import AssociatedServices from "./components/services/AssociatedServices";
 import TermsOfUse from "./components/header-footer/TermsOfUse";
 import PrivacyPolicy from "./components/header-footer/PrivacyPolicy";
-import MessageForm from "./components/home/MessageForm";
+import MessageForm2 from "./components/home/MessageForm2";
 import ProvidingPlatform from "./components/services/ProvidingPlatform";
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword/>}/>
         <Route path="/terms-of-use" element={<TermsOfUse/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
-        <Route path="/message-us" element={<MessageForm/>}/>
+        <Route path="/message-us" element={<MessageForm2/>}/>
         
       </Routes>
 
