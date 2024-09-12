@@ -42,24 +42,15 @@ export const platformInfo=[
         description:(
             <>
 
-            <b>• Project Management:</b>
-            Easily manage your project by tracking the total work done and the contributions of each annotator. This feature ensures transparency and efficiency.
-
-                <br />
-
-                <b>• Annotator Management:</b>
-                Annotators can register on our platform using the unique project code, ensuring secure and controlled access to the project.
-
-                <br />
-                <b>• Access Management:</b>
-                 Control who has access to your project, ensuring that only authorized personnel can view and contribute to it.
-
-                <br />
-                <b>• Payment Management:</b>
-                 Keep track of payments made and pending payments through our integrated payment system.
-
-                <br />
-                <b>• Dataset Management:</b> Download the dataset from the portal with ease, ensuring you have access to all the data you need.
+            <b>• Project Management:</b> Easily manage your project by tracking the total work done and the contributions of each annotator. This feature ensures transparency and efficiency.
+            <br />
+            <b>• Annotator Management:</b> Annotators can register on our platform using the unique project code, ensuring secure and controlled access to the project.
+            <br />
+            <b>• Access Management:</b> Control who has access to your project, ensuring that only authorized personnel can view and contribute to it.
+            <br />
+            <b>• Payment Management:</b> Keep track of payments made and pending payments through our integrated payment system.
+            <br />
+            <b>• Dataset Management:</b> Download the dataset from the portal with ease, ensuring you have access to all the data you need.
             </>
         ),
         image:Image2
@@ -69,32 +60,28 @@ export const platformInfo=[
         title:"QUALITY CONTROL",
         description:(
     <>
-    <b>• Quality Control:</b> Implement robust quality control measures through practice sets and review processes.<br/>
+    <b>• Quality Control:</b> Implement robust quality control measures through practice sets and review processes.
+    <br/>
     <b>• Guideline Creation:</b> Clear and detailed guidelines can be created to ensure all annotators understand the project requirements.
-
     <br />
     <b>• Practice Set for Quality Assessment:</b> A practice set can be uploaded to evaluate annotators’ understanding and performance. This helps in maintaining high-quality standards from the start.
-
     <br />
     <b>• Feedback on Practice Sets:</b> Annotators receive constructive feedback on their practice sets, helping them improve and align with project expectations.
-
     <br />
     <b>• Review Process:</b>  Conduct thorough reviews to maintain the quality and accuracy of the work being done.
-    
     <br />
     <b>• Dataset Download:</b> Easily download your dataset from the portal once the project is complete.
-
-            </>
-        ),
-        image: Image4
+    </>
+    ),
+    image: Image4
     },
     {
         id:4,
         title:"SECURITY",
         description:(
             <>
-                <b>• Project Creation with Unique Security Codes:</b>
-                Each project is assigned a unique code to ensure security and easy access. Annotators can register on the platform and use this code to join the project.<br /> 
+                <b>• Project Creation with Unique Security Codes:</b> Each project is assigned a unique code to ensure security and easy access. Annotators can register on the platform and use this code to join the project.
+                <br/> 
                 <b>• Data Security:</b> We prioritize your data's safety with advanced encryption protocols and secure data storage solutions. Your information is safeguarded against unauthorized access and breaches.
 
             </>
