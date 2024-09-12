@@ -194,7 +194,7 @@ sx={{margin:{xs:"3%",sm:"4%",md:"5%"},fontFamily:"sans-serif",
      <div  style={{
   minHeight: "500px",   
   height: 'auto',       
-  maxHeight: "3500px",  
+  maxHeight: "4000px",  
   width: '99%',
   //background: 'linear-gradient(to right, #23d6d4, #0a3758)',
   display: "flex",
