@@ -1,11 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Box, Typography,Button,Paper,Grid } from '@mui/material';
-
 import { platformInfo } from '../../../required-data/object-data/platformInfo';
-
-
-
 
 const PlatformDescriptionSmall = () => {
   return (
@@ -22,9 +18,9 @@ const PlatformDescriptionSmall = () => {
         sx={{
           display: 'flex',
           flexDirection: {
-            xs: 'column', // Stack vertically on extra-small screens
-            sm: 'column', // Stack vertically on small screens
-            md: 'row', // Align horizontally on medium screens and up
+            xs: 'column', 
+            sm: 'column', 
+            md: 'row', 
           },
           alignItems: 'center',
           justifyContent: 'space-evenly',
@@ -62,21 +58,24 @@ const PlatformDescriptionSmall = () => {
     </Box>
     </Box>
 
-    <div style={{margin:"50px"}}>  
+    <div style={{margin:"25px"}}>  
         <Typography
         //variant="h3"
         sx={{
           fontSize: {
-            xs: '1rem',  // 0px - 600px
-            sm: '1.25rem',  // 600px - 960px
-            md: '1.5rem',  // 960px - 1280px
-            lg: '1.5rem',  // 1280px - 1920px
-            xl: '1.75rem',  // 1920px and above
+            xs: '1.25rem',  
+            sm: '1.35rem',  
+            md: '1.4rem', 
+            lg: '1.5rem',  
+            xl: '1.75rem',  
           },
           marginTop:"100px",
           marginBottom:"150px",
           textAlign: "justify",
-          lineHeight: '2' 
+          lineHeight: '2',
+          '@media (max-width: 450px)': {
+              textAlign:"left"
+          } 
           
         }} >
     	{platformInfo[ele].description}
