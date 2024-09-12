@@ -17,9 +17,9 @@ const LanguagesNext = () => {
         },
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'linear-gradient(to right,  #06b5fb, #0369a6,#094f87)', 
+        background: 'linear-gradient(to right,  white,#094f87)', 
         padding: 4,
-        color: 'white',
+        //color: 'white',
         minHeight:"500px",
         marginTop:"50px",
         marginBottom:"50px"
@@ -65,7 +65,7 @@ const LanguagesNext = () => {
             maxWidth: '90%',
             zIndex: 1,
             borderRadius: '50%', 
-            boxShadow: '0px 0px 30px 20px #8ba2f3',
+            //boxShadow: '0px 0px 30px 20px #8ba2f3',
             background:"white"
           }}
         />
