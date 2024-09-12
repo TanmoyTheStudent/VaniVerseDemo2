@@ -1,123 +1,190 @@
+import { useEffect, useState } from 'react';
 import { Link as ScrollLink, Element, animateScroll as scroll } from 'react-scroll';
-import { Box,Typography,Button } from '@mui/material';
+import { Box, Typography, Button,Grid,Card,CardActionArea,CardContent } from '@mui/material';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { serviceDescription } from '../../required-data/object-data/associatedServiceDescription';
 
-const StyledScrollLink = ({ to, children }) => (
+const AssociatedServices = () => {
+  const [navbarHeight, setNavbarHeight] = useState(0);
+
+  useEffect(() => {
+    //navbar height
+    const navbarElement = document.querySelector('.navbar');
+    if (navbarElement) {
+      setNavbarHeight(navbarElement.offsetHeight);
+    }
+    console.log(navbarHeight)
+  }, []); 
+
+  const StyledScrollLink = ({ to, children }) => (
     <ScrollLink
       to={to}
       smooth={true}
       duration={500}
+      offset={-110} // fixed navbar
       style={{
-        color: 'inherit', // Use the inherited color
-        textDecoration: 'none', // Remove underline
-        cursor: 'pointer', // Cursor pointer for hover
-        transition: 'color 0.1s', // Smooth color transition
+        color: 'inherit', 
+        textDecoration: 'none', 
+        cursor: 'pointer', 
+        transition: 'color 0.1s', 
       }}
-      onMouseEnter={(e) => (e.target.style.color = 'yellow')} // Change color on hover
-      onMouseLeave={(e) => (e.target.style.color = 'inherit')} // Revert color on hover out
+      // onMouseEnter={(e) => (e.target.style.color = 'yellow')} // Change color on hover
+      // onMouseLeave={(e) => (e.target.style.color = 'inherit')} // Revert color on hover out
     >
       {children}
     </ScrollLink>
-  )
+  );
 
-function AssociatedServices() {
+  console.log(navbarHeight)
+
+  const associatedServices=[
+    {
+      name:"Audio Segmentation",
+      to:"details1"
+    },
+    {
+      name:"Image Annotations",
+      to:"details2"
+    },
+    {
+      name:"Audio Verification",
+      to:"details3"
+    },
+    {
+      name:"NLP Annotations",
+      to:"details4"
+    }
+  ]
+
   return (
-    <div>
-         <Box
-      sx={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        background: 'linear-gradient(to right, #4c00ff, #1b1464)', // Adjust the gradient colors
-        height:"500px",
-        padding: "20px",
-        color: 'white',
-      }}
-    >
-     
-
-      <Box sx={{ maxWidth: '100%',margin:0,padding:{xs:"20px",sm:"30px",md:"50px"},alignItems:'center' }}>
-        
-      <Typography
-      variant="h4"
-      component="div"
-      sx={{
-        fontWeight: 'bold',
-        fontSize: {
-          xs: '1.15rem',
-          sm: '1.5rem',
-          md: '1.75rem',
-          lg: '2rem',
-          xl: '2.5rem'
-        },
-        textAlign: "left",
-      }}
-    >
-      {/* Using the reusable StyledScrollLink component */}
-      <StyledScrollLink to="details1">● Audio Segmentation</StyledScrollLink>
-      <br />
-      <StyledScrollLink to="details2">● Image Annotations</StyledScrollLink>
-      <br />
-      <StyledScrollLink to="details3">● Audio Verification</StyledScrollLink>
-      <br />
-      <StyledScrollLink to="details4">● NLP Annotations</StyledScrollLink>
-    </Typography>
-
-      </Box>
-      
-    
-      
-    </Box>
-
-
-{
-    serviceDescription.map((service,i)=>{
-        return(
-            <div key={i} style={{margin:"50px",marginTop:"150px",marginBottom:"100px"}}>
-            <Element name={service.name} >
-            <Typography 
-            //variant="h3"
-            component="div" 
-            sx={{ fontWeight: 'bold',
-              fontSize: {xs: '1.75rem',  
-              sm: '2rem',  
-              md: '2.25rem',  
-              lg: '2.5rem',  
-              xl: '2.75rem', 
-              },
-            textAlign:"center",color:"navy"}}>
-       
-            {service.title}
-      </Typography>
-      <Typography
-        //variant="h3"
+    <div style={{ marginTop: navbarHeight }}>
+      <Box
         sx={{
-          fontSize: {
-            xs: '1rem',  // 0px - 600px
-            sm: '1.25rem',  // 600px - 960px
-            md: '1.5rem',  // 960px - 1280px
-            lg: '1.5rem',  // 1280px - 1920px
-            xl: '1.75rem',  // 1920px and above
-          },
-          textAlign: "justify",
-          lineHeight: '2',
-          marginTop:"80px",
-          marginBottom:"80px"
-          
-        }} >
-    	{service.description}
-      </Typography>
-      
-        
-      </Element>
-            </div>
-        )
-    })
-}
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          background: 'linear-gradient(to right, #4c00ff, #1b1464)',
+          minHeight:{xs: "550px",xl:"750px"},
+          padding: "20px",
+          color: 'white',
+          marginBottom:"10%"
+        }}
+      >
+        <Box sx={{ maxWidth: '100%', margin: 0, padding: { xs: "20px", sm: "30px", md: "50px" }, alignItems: 'center' }}>
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{
+              fontWeight: 'bold',
+              fontSize: {
+                xs: '2rem',
+                sm: '2.5rem',
+                md: '2.75rem',
+                lg: '3rem',
+                xl: '4rem'
+              },
+              textAlign: "center",
+            }}
+          >
+            Other Associated Services<br/>
 
-{/* Scroll to Top Button */}
-<Box
+
+            <Grid container spacing={5}  justifyContent="center" sx={{mt:"1.5%",mb:"1.5%"}}>
+          {
+            associatedServices.map((ele,i)=>{
+              return(
+                <Grid item xs={12} sm={6} md={3} lg={3} key={i} style={{ display: 'flex', justifyContent: 'center',width:"100%" }}>
+
+<StyledScrollLink to={ele.to}>
+<Card
+            sx={{
+              width: { xs: '90%', sm: "250px", md: '100%', lg: "100%", xl: "90%" }, 
+              height: { xs: "100px", sm: "100px", md: "100px", lg: "125px" },
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between', 
+              padding: "2%",
+              marginBottom: "2%",
+              background: "none",
+              color: "white",
+              border: "2px solid white",
+              borderRadius: "25px",
+              textAlign: "center",
+              transition: 'background-color 0.3s ease',
+              '&:hover': {
+                backgroundColor: '#06184d', 
+              }
+            }}
+          >
+                    <CardActionArea>
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div"
+                        style={{fontWeight:"bold"}}
+                        >
+                          {ele.name}
+                        </Typography>
+                       
+                      </CardContent>
+                   </CardActionArea>
+                   
+               </Card>
+               </StyledScrollLink>
+            </Grid>
+              )}
+          )}
+        </Grid>
+
+          </Typography>
+        </Box>
+      </Box>
+
+      {serviceDescription.map((service, i) => (
+        <div key={i} style={{ margin: "50px", marginTop: "5%", marginBottom: "100px"}}>
+          <Element name={service.name}>
+            <Typography
+              component="div"
+              sx={{
+                fontWeight: 'bold',
+                fontSize: {
+                  xs: '1.75rem',
+                  sm: '2rem',
+                  md: '2.25rem',
+                  lg: '2.5rem',
+                  xl: '2.75rem',
+                },
+                textAlign: "center",
+                color: "navy"
+              }}
+            >
+              {service.title}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: {
+                  xs: '1.25rem',
+                  sm: '1.35rem',
+                  md: '1.4rem',
+                  lg: '1.5rem',
+                  xl: '1.75rem',
+                },
+                textAlign: "justify",
+                lineHeight: '2',
+                marginTop: "80px",
+                marginBottom: "80px"
+              }}
+            >
+              {service.description}
+            </Typography>
+            {
+              [0,1,2].includes(i)?<Box sx={{ mt: 3, mb: 1, borderBottom: '1px solid #8a8c93 ' }} />:null
+            }
+            
+          </Element>
+        </div>
+      ))}
+
+      {/* Scroll to Top Button */}
+      <Box
         sx={{
           position: 'fixed',
           bottom: '20px',
@@ -126,7 +193,7 @@ function AssociatedServices() {
         }}
       >
         <Button
-          onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })} // Use scroll.scrollToTop with duration
+          onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })}
           variant="contained"
           sx={{
             backgroundColor: '#007bff',
@@ -142,10 +209,8 @@ function AssociatedServices() {
           <ArrowUpwardIcon />
         </Button>
       </Box>
-   
-      
     </div>
-  )
-}
+  );
+};
 
-export default AssociatedServices
+export default AssociatedServices;
