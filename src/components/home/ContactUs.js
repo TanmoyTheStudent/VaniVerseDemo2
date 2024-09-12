@@ -9,23 +9,23 @@ import ContactCard from './sub-components/ContactCard';
 
 const ContactUs = () => {
   return (
-    <div style={{marginTop:"150px"}}>
+    <div style={{marginTop:"100px"}}>
        <Box
       sx={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'linear-gradient(to right, #4c00ff, #1b1464)', // Adjust the gradient colors
+        background: 'linear-gradient(to right, #4c00ff, #1b1464)', 
         height:"550px",
         padding: 0,
         color: 'white',
       }}
     >
       <Box sx={{ maxWidth: '100%',margin:8,padding:0,alignItems:'center' }}>
-        <Typography variant="h4" component="div" sx={{ fontWeight: 'bold', textAlign: '' }}>
+        <Typography variant="h3" component="div" sx={{ fontWeight: 'bold', textAlign: '' }}>
           Contact Us
         </Typography>
-        <Typography variant="subtitle1" sx={{ marginTop: 2,textAlign: '' }}>
+        <Typography variant="h5" sx={{ marginTop: 2,textAlign: '' }}>
         Tell us how we can help with your next AI initiative – Our team is here to help you .
         </Typography>
       </Box>
