@@ -19,7 +19,7 @@ const Languages = () => {
         },
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'linear-gradient(to right, #4c00ff, #1b1464)', 
+        background: 'linear-gradient(to right, #226dc7, #0369a6)', 
         padding: 4,
         color: 'white',
         minHeight:"500px",
