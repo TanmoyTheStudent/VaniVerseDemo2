@@ -67,7 +67,7 @@ function Footer() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/our-solutions" >
+                            <Link to="/participate&earn" >
                             Participate and Earn
                             </Link>
                         </li>
@@ -98,7 +98,7 @@ function Footer() {
     </div>
     <div className="col-12 text-light d-flex align-items-center justify-content-center " style={{ backgroundColor: '#010101' }}>
             <p className='mt-2'>
-                2023 Vani-Verse Technologies Pvt. Ltd. All Rights Reserved.
+                © 2023 Vani and Verse Solutions. All Rights Reserved.
             </p>
     </div>
    
