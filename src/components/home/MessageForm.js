@@ -42,7 +42,7 @@ const MessageForm = () => {
         flexDirection: 'column',
         alignItems: 'center',
         maxWidth: '600px',
-        margin: '0 auto',
+        marginTop: '100px',
         padding: {xs:'1rem',md:'2rem'},
         border: 'none',
         //boxShadow: 'none',
