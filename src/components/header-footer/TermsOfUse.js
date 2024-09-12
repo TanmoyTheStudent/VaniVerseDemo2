@@ -3,7 +3,7 @@ import React from 'react';
 
 function TermsOfUse() {
   return (
-    <div className='m-4'>
+    <div className='m-4' style={{marginTop:"150px"}}>
         <p style={{ textAlign: "center",color:"blue" }}>
              <h2 >Terms Of Use</h2>
              Last updated: 2024-01-21
