@@ -139,7 +139,7 @@ const AssociatedServices = () => {
       </Box>
 
       {serviceDescription.map((service, i) => (
-        <div key={i} style={{ margin: "50px", marginTop: "5%", marginBottom: "100px"}}>
+       <Box key={i} sx={{ margin:{xs:"25px",sm:"30px",md:"50px"} , marginTop: "5%", marginBottom: "100px"}}>
           <Element name={service.name}>
             <Typography
               component="div"
@@ -183,7 +183,7 @@ const AssociatedServices = () => {
             }
             
           </Element>
-        </div>
+        </Box>
       ))}
 
       {/* Scroll to Top Button */}
