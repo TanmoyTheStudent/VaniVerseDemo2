@@ -7,7 +7,38 @@ function DataAnnotationServices() {
 
   return (
     <div>
-      <div style={{margin:"20px",marginBottom:"20px"}}>  
+
+      <div 
+  className="animated-div" 
+  style={{
+  minHeight: "500px",   
+  height: 'auto',       
+  maxHeight: "2000px",  
+  width: '99%',
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: '10px',       
+  //margin: "10px auto ",  
+  overflowY: "auto",      
+ 
+}}>
+  
+  
+  <Grid container spacing={2} justifyContent="center" style={{ width: '100%', maxHeight: 'inherit' }}>
+    
+    {servicesData.map((service, index) => (
+      <Grid item key={index} xs={12} sm={6} md={6} lg={4} 
+        style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: "2%", marginTop: "30px",marginBottom:"30px" }}>
+      
+        <FlipCard title={service.title} link={service.link}/>
+      </Grid>
+    ))}
+  </Grid>
+
+</div>
+
+      <div style={{margin:"20px",marginTop:"100px",marginBottom:"20px"}}>  
         <Typography
         sx={{
           fontSize: {
@@ -76,35 +107,6 @@ function DataAnnotationServices() {
 
 </div>
 
-<div 
-  className="animated-div" 
-  style={{
-  minHeight: "500px",   
-  height: 'auto',       
-  maxHeight: "2000px",  
-  width: '99%',
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: '10px',       
-  //margin: "10px auto ",  
-  overflowY: "auto",      
- 
-}}>
-  
-  
-  <Grid container spacing={2} justifyContent="center" style={{ width: '100%', maxHeight: 'inherit' }}>
-    
-    {servicesData.map((service, index) => (
-      <Grid item key={index} xs={12} sm={6} md={6} lg={4} 
-        style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: "2%", marginTop: "30px",marginBottom:"30px" }}>
-      
-        <FlipCard title={service.title} link={service.link}/>
-      </Grid>
-    ))}
-  </Grid>
-
-</div>
 
     </div>
   )
