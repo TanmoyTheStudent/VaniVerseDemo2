@@ -88,7 +88,7 @@ function CustomDataCuration() {
             xl: '4rem' },
         textAlign: 'justify',
          '@media (max-width: 525px)': {
-          textAlign:"center"
+          textAlign:"center"}
     }}>
           CUSTOM DATA CURATION
           </Typography>
