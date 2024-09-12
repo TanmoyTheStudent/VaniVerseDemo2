@@ -170,7 +170,10 @@ const AssociatedServices = () => {
                 textAlign: "justify",
                 lineHeight: '2',
                 marginTop: "80px",
-                marginBottom: "80px"
+                marginBottom: "80px",
+                '@media (max-width: 450px)': {
+                      textAlign:"left"
+                  }
               }}
             >
               {service.description}
