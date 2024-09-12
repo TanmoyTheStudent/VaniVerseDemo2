@@ -9,14 +9,14 @@ import ContactCard from './sub-components/ContactCard';
 
 const ContactUs = () => {
   return (
-    <div className=''>
+    <div style={{marginTop:"150px"}}>
        <Box
       sx={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         background: 'linear-gradient(to right, #4c00ff, #1b1464)', // Adjust the gradient colors
-        height:"500px",
+        height:"550px",
         padding: 0,
         color: 'white',
       }}
