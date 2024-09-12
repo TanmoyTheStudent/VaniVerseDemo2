@@ -139,7 +139,7 @@ const AssociatedServices = () => {
       </Box>
 
       {serviceDescription.map((service, i) => (
-       <Box key={i} sx={{ margin:{xs:"25px",sm:"30px",md:"50px"} , marginTop: "80px", marginBottom: "100px"}}>
+       <Box key={i} sx={{ margin:{xs:"25px",sm:"30px",md:"50px"} , marginTop: "150px", marginBottom: "100px"}}>
           <Element name={service.name}>
             <Typography
               component="div"
