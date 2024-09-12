@@ -190,7 +190,7 @@ function AboutUs() {
           lg: '1.5rem',  
           xl: '1.75rem',  
         },
-        margin:"50px",
+        margin:{xs:"20px",sm:"30px",md:"50px"},
         marginTop:"5%",
         textAlign: "justify",
         lineHeight: '1.8',
