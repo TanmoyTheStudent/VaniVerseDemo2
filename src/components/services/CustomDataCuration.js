@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import {  Container,Grid,Box, Typography ,Card,Tab } from "@mui/material";
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
@@ -46,6 +46,15 @@ const tabDesign={
 function CustomDataCuration() {
     const [value, setValue] = useState('1');
     const [value2, setValue2] = useState('1');
+    const [navbarHeight, setNavbarHeight] = useState(0);
+
+    useEffect(() => {
+      const navbarElement = document.querySelector('.navbar');
+      if (navbarElement) {
+        setNavbarHeight(navbarElement.offsetHeight);
+      }
+      console.log(navbarHeight)
+    }, []); 
   
     const handleChange = (event, newValue) => {
       setValue(newValue);
@@ -55,14 +64,15 @@ function CustomDataCuration() {
     };
   
     return (
-      <div>
+      <div style={{ marginTop: navbarHeight }}>
           <Box
         sx={{
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          background: 'linear-gradient(to right, #4c00ff, #1b1464)', // Adjust the gradient colors
-          height:"500px",
+          background: 'linear-gradient(to right, #4c00ff, #1b1464)', 
+          minHeight:{xs:"550px",xl:"750px"},
+        padding: {xs:"20px",md:"30px",lg:"40px",xl:"50px"},
           color: 'white',
         }}
       >
@@ -71,20 +81,24 @@ function CustomDataCuration() {
         <Box sx={{ maxWidth: '100%',margin:0,padding:"50px",alignItems:'center' }}>
           <Typography variant="h4" component="div" sx={{ fontWeight: 'bold',
            fontSize: {
-          xs: '1.25rem',   // 0px - 600px
-          sm: '1.5rem',     // 600px - 960px
-          md: '1.75rem',   // 960px - 1280px
-          lg: '2rem',   // 1280px - 1920px
-          xl: '2.5rem' },
+            xs: '2rem',   
+            sm: '2.25rem',    
+            md: '2.5rem', 
+            lg: '2.75rem',  
+            xl: '4rem' },
         textAlign: 'justify' }}>
           CUSTOM DATA CURATION
           </Typography>
           <Typography variant="subtitle1" sx={{ marginTop: 2,textAlign: 'justify', fontSize: {
-          xs: '1rem',   
-          sm: '1rem',     
-          md: '1rem',   
-          lg: '1.25rem',  
-          xl: '1.5rem' } }}>
+        xs: '1.25rem',   
+        sm: '1.35rem',     
+        md: '1.4rem',   
+        lg: '1.5rem',  
+        xl: '2rem' },
+        '@media (max-width: 450px)': {
+          textAlign:"left"
+      }
+          }}>
           Unlock the full potential of your data with our custom data curation services, designed to provide you with high-quality, structured, and actionable datasets tailored to your unique needs.
 
           </Typography>
