@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import WordCloud from "../../../required-data/assests/image/Language4.png"
 
 const languages = [
-    "Gujrati","Kankoni","Kannada","Khasi","Magahi","Malayalam","Nepali","Odia","Punjabi","Tamil"
+    "Boro","Kannada","Khasi","Kokborok","Magahi","Malayalam","Meitei","Nepali","Odia","Tamil"
 ];
 
 const LanguagesNext = () => {
