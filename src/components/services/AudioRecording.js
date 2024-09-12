@@ -98,8 +98,8 @@ function AudioRecording() {
         <Typography variant="subtitle1" sx={{ marginTop: 2,textAlign: 'justify', fontSize: {
         xs: '1.25rem',   
         sm: '1.35rem',     
-        md: '1.5rem',   
-        lg: '1.75rem',  
+        md: '1.4rem',   
+        lg: '1.5rem',  
         xl: '2rem' },
         '@media (max-width: 450px)': {
           textAlign:"left"
