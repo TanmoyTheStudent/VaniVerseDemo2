@@ -98,7 +98,7 @@ const AssociatedServices = () => {
 <StyledScrollLink to={ele.to}>
 <Card
             sx={{
-              width: { xs: '90%', sm: "250px", md: '100%', lg: "100%", xl: "90%" }, 
+              width: { xs: '250px', sm: "250px", md: '100%', lg: "100%", xl: "90%" }, 
               height: { xs: "100px", sm: "100px", md: "100px", lg: "125px" },
               display: 'flex',
               flexDirection: 'column',
