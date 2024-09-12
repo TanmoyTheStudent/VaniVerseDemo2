@@ -15,16 +15,16 @@ export const platformInfo=[
     We offer a robust and secure platform designed to streamline your project management needs. It includes-
     <br />
 
-    <b>• Management :</b> We offer all types of manament works related to your data annotation project.
+    <b>• Management:</b> We offer all types of manament works related to your data annotation project.
     <br/>
 
-    <b>• Quality Control :</b> To maintain the quality of your project, we offer a comprehensive solution.
+    <b>• Quality Control:</b> To maintain the quality of your project, we offer a comprehensive solution.
     <br />
 
-    <b>• Security :</b> Security is our top priority. Your project will be provided with all types of necessary security.
+    <b>• Security:</b> Security is our top priority. Your project will be provided with all types of necessary security.
     <br />
 
-    <b>• Customization :</b> Tailor the platform to meet the specific needs of your project.
+    <b>• Customization:</b> Tailor the platform to meet the specific needs of your project.
     <br />
     
 
@@ -42,12 +42,12 @@ export const platformInfo=[
         description:(
             <>
 
-            <b>• Project Management :</b>
+            <b>• Project Management:</b>
             Easily manage your project by tracking the total work done and the contributions of each annotator. This feature ensures transparency and efficiency.
 
                 <br />
 
-                <b>• Annotator Management :</b>
+                <b>• Annotator Management:</b>
                 Annotators can register on our platform using the unique project code, ensuring secure and controlled access to the project.
 
                 <br />
@@ -68,19 +68,22 @@ export const platformInfo=[
         id:3,
         title:"QUALITY CONTROL",
         description:(
-            <>
-                <b>• Quality Control:</b>
-                Implement robust quality control measures through practice sets and review processes.<br/>
-                <b>• Guideline Creation :</b> Clear and detailed guidelines can be created to ensure all annotators understand the project requirements.
+    <>
+    <b>• Quality Control:</b> Implement robust quality control measures through practice sets and review processes.<br/>
+    <b>• Guideline Creation:</b> Clear and detailed guidelines can be created to ensure all annotators understand the project requirements.
 
     <br />
-    <b>• Practice Set for Quality Assessment :</b> A practice set can be uploaded to evaluate annotators’ understanding and performance. This helps in maintaining high-quality standards from the start.
+    <b>• Practice Set for Quality Assessment:</b> A practice set can be uploaded to evaluate annotators’ understanding and performance. This helps in maintaining high-quality standards from the start.
 
     <br />
-    <b>• Feedback on Practice Sets :</b> Annotators receive constructive feedback on their practice sets, helping them improve and align with project expectations.
+    <b>• Feedback on Practice Sets:</b> Annotators receive constructive feedback on their practice sets, helping them improve and align with project expectations.
 
     <br />
-    <b>• Review Process :</b>  Conduct thorough reviews to maintain the quality and accuracy of the work being done.
+    <b>• Review Process:</b>  Conduct thorough reviews to maintain the quality and accuracy of the work being done.
+    
+    <br />
+    <b>• Dataset Download:</b> Easily download your dataset from the portal once the project is complete.
+
             </>
         ),
         image: Image4
@@ -90,9 +93,10 @@ export const platformInfo=[
         title:"SECURITY",
         description:(
             <>
-                <b>• Project Creation with Unique Security Codes :</b>
-                <br /> 
-                Each project is assigned a unique code to ensure security and easy access. Annotators can register on the platform and use this code to join the project.
+                <b>• Project Creation with Unique Security Codes:</b>
+                Each project is assigned a unique code to ensure security and easy access. Annotators can register on the platform and use this code to join the project.<br /> 
+                <b>• Data Security:</b> We prioritize your data's safety with advanced encryption protocols and secure data storage solutions. Your information is safeguarded against unauthorized access and breaches.
+
             </>
         ),
         image: Image3
