@@ -86,7 +86,10 @@ function CustomDataCuration() {
             md: '2.5rem', 
             lg: '2.75rem',  
             xl: '4rem' },
-        textAlign: 'justify' }}>
+        textAlign: 'justify',
+         '@media (max-width: 525px)': {
+          textAlign:"center"
+    }}>
           CUSTOM DATA CURATION
           </Typography>
           <Typography variant="subtitle1" sx={{ marginTop: 2,textAlign: 'justify', fontSize: {
@@ -96,7 +99,7 @@ function CustomDataCuration() {
         lg: '1.5rem',  
         xl: '2rem' },
         '@media (max-width: 450px)': {
-          textAlign:"left"
+          textAlign:"center"
       }
           }}>
           Unlock the full potential of your data with our custom data curation services, designed to provide you with high-quality, structured, and actionable datasets tailored to your unique needs.
