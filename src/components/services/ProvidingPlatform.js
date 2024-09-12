@@ -1,99 +1,92 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Container,Grid,Box, Typography ,Card,CardActionArea,Tab,useMediaQuery, useTheme} from '@mui/material';
-
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-
-
 import MessageForm from '../home/MessageForm';
-
-
 import PlatformDescription from './sub-components/PlatformDescription';
 import PlatformDescriptionSmall from './sub-components/PlatformDescription-small';
 
-const tabDesign={
-  fontWeight: 'bold', 
-  fontSize: {
-    xs: '1.25rem',  
-    sm: '1.5rem', 
-    md: '1.5rem'
-  },
-  mx: {
-    xs: 1,       
-    sm: 2,       
-    md: 3,       
-    lg: 4
-  }
-}
-
-const tabDesign2 = {
-  color: "white", // Default color
-  fontWeight: 'bold',
-  marginTop:"20px",
-  fontSize: {
-    xs: '1rem',
-    sm: '1rem',
-    md: '1.25rem'
-  },
-  mx: {
-    xs: 0.5,
-    sm: 1,
-    md: 2,
-    lg: 4
-  },
-  '&.Mui-selected': {
-    color: 'yellow', // Text color when selected (active)
-  
-  }
-};
-
-
 function ProvidingPlatform() {
-  const [value, setValue] = useState('1');
-  const [value2, setValue2] = useState('1');
+  const [navbarHeight, setNavbarHeight] = useState(0);
 
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'))
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-  const handleChange2 = (event, newValue) => {
-    setValue2(newValue);
-  };
+  useEffect(() => {
+    const navbarElement = document.querySelector('.navbar');
+    if (navbarElement) {
+      setNavbarHeight(navbarElement.offsetHeight);
+    }
+    console.log(navbarHeight)
+  }, []);
+
 
   return (
-    <div>
+    <div style={{ marginTop: navbarHeight }}>
         <Box
       sx={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'linear-gradient(to right, #4c00ff, #1b1464)', // Adjust the gradient colors
-        height:"500px",
+        background: 'linear-gradient(to right, #4c00ff, #1b1464)',
+        minHeight:{xs: "550px",xl:"750px"},
         padding: 2,
         color: 'white',
       }}
     >
       <Box sx={{ maxWidth: '100%',margin:0,padding:2,alignItems:'center' }}>
+      <Typography
+    
+            component="div"
+            sx={{
+              fontWeight: 'bold',
+              fontSize: {
+                xs: '2rem',
+                sm: '2.5rem',
+                md: '2.75rem',
+                lg: '3rem',
+                xl: '4rem'
+              },
+              textAlign: "center",
+            }}
+          >
+            Vani Verse Studio
+          </Typography>
+            <br/>
         <Typography variant="h4" component="div" sx={{ fontWeight: 'bold',
          fontSize: {
-        xs: '1.25rem',   // 0px - 600px
-        sm: '1.25rem',     // 600px - 960px
-        md: '1.5rem',   // 960px - 1280px
-        lg: '1.75rem',   // 1280px - 1920px
+        xs: '1.25rem',  
+        sm: '1.25rem', 
+        md: '1.5rem',   
+        lg: '1.75rem',   
         xl: '2rem' },
-      textAlign: 'justify' }}>
+      textAlign: 'justify', 
+      '@media (max-width: 450px)': {
+          textAlign:"center"
+      } }}>
+       
         Our platform is designed to make your annotation projects seamless, efficient, and of the highest quality. Join us today to experience the difference.
         </Typography>
-        <Typography variant="h6" sx={{ marginTop: 2,textAlign: 'justify' }}>
-          Key Features-<br/>
-          1. One Step Solution<br/>
-          2. Management<br/>
-          3. Quality Control<br/>
-          4. Ensuring Security<br/>
-        </Typography>
+        <Typography variant="h6" sx={{ marginTop: 2,textAlign: 'justify',fontWeight:"bold",
+        '@media (max-width: 450px)': {
+          textAlign:"center"
+      }
+          }}>
+        
+          <Typography 
+  variant="h6" 
+  sx={{ 
+    fontWeight: "bold", 
+    textAlign: 'left',
+    display: 'inline-block',
+    marginLeft: '0px' 
+  }}
+>
+Key Features-<br/>
+  ✔ One Step Solution<br/>
+  ✔ Management<br/>
+  ✔ Quality Control<br/>
+  ✔ Ensuring Security
+    </Typography>
+  </Typography>
       </Box>
       
     </Box>
