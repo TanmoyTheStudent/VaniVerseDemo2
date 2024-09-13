@@ -1,9 +1,13 @@
-
-import React from 'react';
+import { Box } from '@mui/material'
 
 function TermsOfUse() {
   return (
-    <div style={{margin:"30px",marginTop:"150px"}}>
+    <Box
+      sx={{
+          margin:"30px",
+         marginTop:{xs:'100px',sm:'130px',lg:'150px'}
+      }}
+    >
         <p style={{ textAlign: "center",color:"blue" }}>
              <h2 >Terms Of Use</h2>
              Last updated: 2024-01-21
@@ -200,7 +204,7 @@ function TermsOfUse() {
         <br />
         Please send your feedback, comments, requests for technical support by email: <a href="mailto:vaniandverse@gmail.com">vaniandverse@gmail.com</a>.
       </p>
-        </div>
+        </Box>
   )
 }
  export default TermsOfUse
