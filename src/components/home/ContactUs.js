@@ -24,7 +24,7 @@ const ContactUs = () => {
         alignItems: 'center',
         justifyContent: 'space-between',
         background: 'linear-gradient(to right, #4c00ff, #1b1464)', 
-        minHeight:{xs:"550px",xl:"750px"},
+        minHeight:{xs:"500px",xl:"750px"},
         padding: {xs:"20px",md:"30px",lg:"40px",xl:"50px"},
         color: 'white',
       }}
