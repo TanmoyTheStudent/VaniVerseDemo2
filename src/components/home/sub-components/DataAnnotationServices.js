@@ -38,7 +38,7 @@ function DataAnnotationServices() {
 
 </div>
 
-      <div style={{margin:"20px",marginTop:"100px",marginBottom:"20px"}}>  
+      <div style={{margin:"10px",marginTop:"100px",marginBottom:"20px"}}>  
         <Typography
         sx={{
           fontSize: {
@@ -64,7 +64,7 @@ function DataAnnotationServices() {
             lg: '1.4rem', 
             xl: '1.75rem',  
           },
-          margin:"10px",
+          margin:{sm:"10px",md:"20px"},
           textAlign: {xs:"left",sm:"justify"},
           display: { xs: 'none', sm: 'block' }
           
