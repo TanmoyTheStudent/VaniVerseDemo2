@@ -22,7 +22,7 @@ const MessageForm2 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here, you can handle form submission logic, such as sending the data to a server.
+    //form submission logic
     console.log('Form Data:', formData);
     // Reset form after submission
     setFormData({
@@ -41,7 +41,7 @@ const MessageForm2 = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        maxWidth: '600px',
+         maxWidth: {xs:'600px',md:'800px'},
         margin: '0 auto',
        marginTop:{xs:'100px',sm:'130px',lg:'150px'},
         padding: '2rem',
