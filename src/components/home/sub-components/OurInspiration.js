@@ -58,7 +58,7 @@ function OurInspiration() {
                </Card>
               </Grid>
                <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center' }}>
-               <Card sx={{ width: '100%',height:"100%", padding: '10px', margin: '10px'}} align="center" style={{padding:"10px",marginBottom:"20px"}}>
+               <Card sx={{ width: '100%',height:"100%", padding: {xs:'0px',sm:'10px'}, margin: {xs:'0px',sm:'10px'},boxShadow:{xs:0,md:1} }} align="center" style={{padding:"10px",marginBottom:"20px"}}>
                     <CardActionArea>
                      
                       <CardContent>
