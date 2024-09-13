@@ -43,7 +43,7 @@ const MessageForm2 = () => {
         alignItems: 'center',
         maxWidth: '600px',
         margin: '0 auto',
-        marginTop:'150px',
+       marginTop:{xs:'100px',sm:'130px',lg:'150px'},
         padding: '2rem',
         border: 'none',
         //boxShadow: 'none',
