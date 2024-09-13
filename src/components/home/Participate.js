@@ -424,23 +424,29 @@ Sign up now and start your journey with us as an annotator! Your expertise and p
 </div>
 
     
-  <div style={{marginTop:"50px",marginBottom:"50px",padding:"50px",background:"navy"}}>
+ <Box sx={{
+    padding:{xs:"20px",sm:'25px',md:'0px',lg:'50px'},
+    paddingTop:{xs:'40px',sm:'50px',md:'75px'},
+    paddingBottom:{xs:'40px',sm:'50px',md:'75px'},
+    background:"navy"}}>
 
-    <Container>
+   
         <Grid container spacing={0}  justifyContent="center" style={{margin:"0px"}}>
         
                <Grid item sm={12} md={10} lg={10}  style={{ display: 'flex', justifyContent: 'center' }}>
-               <Card sx={{ width: '100%',height:"100%", padding: '10px', margin: '10px',
+               <Card sx={{ width: '100%',height:"100%", 
                 border: 'none',
-                boxShadow: 'none'
+                boxShadow: 'none',
+                borderRadius:"15px",
+                paddingTop:{sm:"25px"},
+                paddingBottom:{sm:'25px'}
                }} align="center" >
                    <MessageForm/>
                </Card>
 
             </Grid>
             </Grid>
-        </Container>
-    </div>
+        </Box>
      
       <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
         <DialogTitle> Languages</DialogTitle>
