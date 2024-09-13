@@ -438,8 +438,8 @@ Sign up now and start your journey with us as an annotator! Your expertise and p
                 border: 'none',
                 boxShadow: 'none',
                 borderRadius:"15px",
-                paddingTop:{sm:"25px"},
-                paddingBottom:{sm:'25px'}
+                paddingTop:{sm:"25px",lg:'50px'},
+                paddingBottom:{sm:'25px',lg:'50px'}
                }} align="center" >
                    <MessageForm/>
                </Card>
