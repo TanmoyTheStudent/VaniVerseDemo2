@@ -105,7 +105,15 @@ const LoginForm = () => {
         <Typography
           color="primary"
           align="center"
-          sx={{ mt: 2, mb: 2 ,cursor: 'pointer',fontSize: '1rem' }}
+          sx={{
+             mt: 2,
+              mb: 2 ,
+              cursor: 'pointer',
+              fontSize: '1rem',
+            '&:hover': {
+                    color: 'navy', 
+                }
+            }}
           onClick={() => navigate('/forgot-password')}
         >
           Forgot Password?
