@@ -77,7 +77,7 @@ function DataAnnotationServices() {
 <b>• Audio Segmentation:</b> Dividing audio into meaningful segments for analysis.<br/>
 <b>• Image Annotations:</b> Detailed image data annotations.<br/>
 <b>• Custom Data Curation:</b> We meticulously curate custom datasets in both audio and text to ensure accuracy and relevance for your AI models <br/>
-<b>• NLP Annotations:</b> Data Curation for NLPs project requirements. <br/><br/><br/>
+<b>• NLP Annotations:</b> Data Curation for NLPs project requirements. <br/>
 </Typography>
 
 <Typography
@@ -102,7 +102,7 @@ function DataAnnotationServices() {
 <b>• Audio Segmentation:</b><br/> Dividing audio into meaningful segments for analysis.<br/><br/>
 <b>• Image Annotations:</b><br/> Detailed image data annotations.<br/><br/>
 <b>• Custom Data Curation:</b><br/> We meticulously curate custom datasets in both audio and text to ensure accuracy and relevance for your AI models <br/><br/>
-<b>• NLP Annotations:</b><br/> Data Curation for NLPs project requirements. <br/><br/><br/>
+<b>• NLP Annotations:</b><br/> Data Curation for NLPs project requirements. <br/>
 </Typography>
 
 </div>
