@@ -15,7 +15,7 @@ function ProvidingPlatform2() {
         alignItems: 'center',
         justifyContent: 'space-evenly',
         background: 'linear-gradient(to right, #4c00ff, #1b1464)',
-        padding: 4,
+        padding: {xs:2,sm:4},
         color: 'white',
         minHeight:"550px",
         marginTop:"50px",
