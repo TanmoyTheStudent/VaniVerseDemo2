@@ -1,8 +1,13 @@
-
+import { Box } from '@mui/material'
 
 function PrivacyPolicy() {
   return (
-    <div  style={{margin:"30px",marginTop:"150px",marginBottom:"50px"}}>
+   <Box
+      sx={{
+          margin:"30px",
+         marginTop:{xs:'100px',sm:'130px',lg:'150px'}
+      }}
+    >
       <p style={{ textAlign: "center", color: "blue" }}>
         <b><h2>Privacy Policy</h2></b>
         <span>Last updated: 2024-01-21</span>
@@ -262,7 +267,7 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, please contact us by email: <a href="mailto:vaniandverse@gmail.com">vaniandverse@gmail.com</a> .
 </p>
-        </div>
+        </Box>
   )}
 
 export default PrivacyPolicy
