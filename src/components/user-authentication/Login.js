@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
@@ -98,7 +96,7 @@ function Login() {
   }
 
   return (
-    <div className="col-md-6 offset-md-3 offset-1 " style={{marginTop: '100px'}}>
+    <div className="col-md-6 offset-md-3 offset-1 " style={{marginTop: '150px',marginBottom:'100px'}}>
         
         <h4 className="text-center">Login Form</h4>
         <form onSubmit={handleSubmit}>
