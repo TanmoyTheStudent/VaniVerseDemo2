@@ -93,6 +93,7 @@ Our platform is designed to make your annotation projects seamless, efficient, a
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          marginBottom:{xs:"20px",md:0}
         }}
       >
         <Button
