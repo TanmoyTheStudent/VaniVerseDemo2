@@ -38,7 +38,7 @@ function OurInspiration() {
     <Container >
         <Grid container spacing={0}  justifyContent="center" style={{marginBottom:"4%"}}>
         <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center' }}>
-                  <Card sx={{ width: '100%',height:"100%", padding: '10px', margin: '10px'}} align="center" >
+                  <Card sx={{ width: '100%',height:"100%", padding: {xs:'0px',sm:'10px'}, margin: '10px'}} align="center" >
                     <CardActionArea onClick={handleClickOpen}>
                       <CardMedia
                         component="img"
