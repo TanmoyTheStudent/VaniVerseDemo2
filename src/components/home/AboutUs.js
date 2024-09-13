@@ -17,7 +17,7 @@ function AboutUs() {
   backgroundImage: `url(${Background})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  minHeight: "500px",   
+  minHeight: "550px",   
   height: 'auto',       
   maxHeight: "1500px",  
   width: '100%',
@@ -190,12 +190,12 @@ function AboutUs() {
           lg: '1.5rem',  
           xl: '1.75rem',  
         },
-        margin:{xs:"20px",sm:"30px",md:"50px"},
-        marginTop:"5%",
+         margin:{xs:"20px",sm:"30px",md:"50px"},
+        marginTop:{xs:"50px",sm:"50px",md:"75px"},
         textAlign: "justify",
         lineHeight: '1.8',
         wordSpacing:"5px" ,
-        '@media (max-width: 400px)': {
+        '@media (max-width: 450px)': {
         textAlign:"center"
    },
         
