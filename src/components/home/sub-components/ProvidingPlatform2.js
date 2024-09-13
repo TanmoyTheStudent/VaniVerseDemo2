@@ -42,7 +42,7 @@ function ProvidingPlatform2() {
             display: { xs: 'none', sm: 'block' }
           }}
     >
-  	We offer a robust platform where you can host and manage your own data curation projects, streamlining your workflow, managing annotators, and enhancing productivity. Some of the key features are as follows-<br/><br/>
+We offer a robust platform where you can host and manage your own data curation projects, streamlining your workflow, managing annotators, and enhancing productivity. Some of the key features are as follows-<br/><br/>
 <b> - Annotator Management:</b> Efficiently manage annotator registrations, performance, and feedback.<br/>
 <b> - Project Management:</b> Monitor and control all aspects of your project, from creation to completion.<br/>
 <b> - Security:</b> Ensure secure access with unique project codes and controlled user permissions.<br/>
