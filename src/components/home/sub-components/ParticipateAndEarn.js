@@ -22,7 +22,7 @@ function ParticipateAndEarn() {
     <Container>
         <Grid container spacing={0}  justifyContent="center" sx={{marginTop:"2%",marginBottom:{xs:"100px",md:"10%"} }}>
         <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center',marginTop:"30px" }}>
-                  <Card sx={{ width: '100%',height:"100%", padding: '20px', margin: '0px',boxShadow:"none"}} align="center" >
+                  <Card sx={{ width: '100%',height:"100%", padding: {xs:'10px',md:'20px'}, margin: '0px',boxShadow:"none"}} align="center" >
                     <CardActionArea>
                       <CardMedia
                         component="img"
@@ -41,7 +41,7 @@ function ParticipateAndEarn() {
                </Card>
               </Grid>
                <Grid item sm={12} md={6} lg={6}  style={{ display: 'flex', justifyContent: 'center' }}>
-               <Card sx={{ width: '100%',height:"100%", padding: {sx:"10px",md:"0px",lg:"20px"}, marginTop: {xs:0,md:"5%",lg:"2.5%",xl:"1.5%"},boxShadow:"none"}} align="center" >
+               <Card sx={{ width: '100%',height:"100%", padding: {xs:"0px",sm:'10px',md:"0px",lg:"20px"}, marginTop: {xs:0,md:"5%",lg:"2.5%",xl:"1.5%"},boxShadow:"none"}} align="center" >
                     <CardActionArea>
                      
                       <CardContent style={{marginTop:"5%"}}>
@@ -49,7 +49,7 @@ function ParticipateAndEarn() {
                         gutterBottom 
                         component="div" 
                         sx={{
-                          margin: {sx:"1%",md:0,lg:"2%"},
+                          margin: {xs:"2.5%",md:0,lg:"2%"},
                           fontSize: {
                             xs: '2rem',  
                             sm: '2.25rem',  
