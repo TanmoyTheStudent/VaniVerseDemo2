@@ -69,8 +69,8 @@ const PlatformDescriptionSmall = () => {
             lg: '1.5rem',  
             xl: '1.75rem',  
           },
-          marginTop:"100px",
-          marginBottom:"150px",
+          marginTop:{xs:"50px",sm:"75px"},
+          marginBottom:{xs:"75px",sm:"100px"},
           textAlign: "justify",
           lineHeight: '2',
           '@media (max-width: 450px)': {
