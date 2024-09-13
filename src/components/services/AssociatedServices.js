@@ -153,6 +153,7 @@ const AssociatedServices = () => {
                   xl: '2.75rem',
                 },
                 textAlign: "center",
+                 marginTop: "80px",
                 color: "navy"
               }}
             >
