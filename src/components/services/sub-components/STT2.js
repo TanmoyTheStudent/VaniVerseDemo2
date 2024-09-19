@@ -114,9 +114,6 @@ textAlign:"left"
   Transcription annotations can be used to create datasets that inform content generation models. By annotating transcriptions of lectures, podcasts, and webinars, LLMs can learn to generate coherent and contextually relevant text, making them valuable for applications in content creation, marketing, and education.
   <br/><br/>
 
-<b>4. Language Translation Models :</b><br/>
-  High-quality transcription annotations contribute to the development of translation models for Indian languages. By providing accurate transcriptions of spoken language, we create datasets that help LLMs understand linguistic nuances, idiomatic expressions, and cultural contexts, resulting in more effective translation services.
-  <br/><br/>
    
 </Typography>
    )}
