@@ -18,6 +18,7 @@ sx={{
  // lineHeight: '2',
   fontFamily:"unset",
   wordSpacing: "2px",
+  color:"white",
 //   marginTop: "80px",
 //   marginBottom: "80px",
   '@media (max-width: 450px)': {
