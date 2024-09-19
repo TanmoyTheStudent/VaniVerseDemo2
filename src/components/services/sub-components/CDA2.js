@@ -1,4 +1,4 @@
-import React from 'react'
+import { Typography } from '@mui/material';
 
 function CDA2() {
   return (
@@ -6,7 +6,27 @@ function CDA2() {
 <div style={{margin:"20px",marginBottom:"50px"}}>
         
 
-  <h5 style={{fontFamily:"unset", textAlign: "justify",wordSpacing: "2px",color:"white" }}>
+<Typography
+sx={{
+  fontSize: {
+    xs: '1.25rem',
+    sm: '1.3rem',
+    md: '1.35rem',
+    lg: '1.4rem',
+    xl: '1.5rem',
+  },
+  textAlign: "justify",
+ // lineHeight: '2',
+  fontFamily:"unset",
+  wordSpacing: "2px",
+  color:"white",
+//   marginTop: "80px",
+//   marginBottom: "80px",
+  '@media (max-width: 450px)': {
+textAlign:"left"
+}
+}}
+>
 
   <b>• Understanding Your Requirements:</b> We initiate the custom data curation process by understanding your specific data needs and objectives, determining the type of data required, the desired outcomes, and how the curated data will be utilized in your organization.<br/><br/>
   <b>• Data Identification and Collection:</b> Our team identifies and selects the most relevant data sources that align with your project goals. This can include databases, APIs, research articles, and other data repositories.<br/><br/>
@@ -17,13 +37,9 @@ function CDA2() {
   <b>• Structuring the Data:</b> The curated data is then structured in a way that makes it easily accessible and searchable. This involves organizing the data into a coherent format that aligns with your analytical requirements.<br/><br/>
   <b>• Data Integration and Transformation:</b> If your project involves multiple datasets, we ensure they are seamlessly integrated to provide a unified view. This step is essential for enabling comprehensive analysis.
 
+</Typography>
 
-        </h5>
-       
-
-
-
-    </div>
+</div>
   )
 }
 
