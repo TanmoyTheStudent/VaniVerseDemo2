@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import LanguagesNext from './sub-components/LanguagesNext';
+import LanguagesNow from './sub-components/LanguagesNow';
 import { Container,Typography,Grid,Button,Card,CardActions,Divider,Dialog,DialogContent,DialogActions,DialogTitle,Box } from '@mui/material'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -259,26 +259,24 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
             })
           }
 
-<br/>
-<Button
-            variant="contained"
-            sx={{
-              backgroundColor: '#07145f',
-              borderRadius: '20px',    
-              border: '2px solid gold', 
-              '&:hover': {
-                backgroundColor: '#7038b7', 
-              },
-            }}
-            style={{marginTop:"40px"}} 
-            onClick={handleClickOpen}
-           
-       >
-            Languages We Are Looking For
-    </Button>
-     
-     
         </Grid>
+
+ <Box display="flex" justifyContent="center" sx={{ marginTop: "40px" }}>
+    <Button
+      variant="contained"
+      sx={{
+        backgroundColor: '#07145f',
+        borderRadius: '20px',
+        border: '2px solid gold',
+        '&:hover': {
+          backgroundColor: '#7038b7', 
+        },
+      }}
+      onClick={handleClickOpen}
+    >
+      Languages We Are Looking For
+    </Button>
+  </Box>
         
       </Container>
       </div>
@@ -452,7 +450,7 @@ Sign up now and start your journey with us as an annotator! Your expertise and p
       <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
         <DialogTitle> Languages</DialogTitle>
         <DialogContent>
-          <LanguagesNext />
+          <LanguagesNow />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
