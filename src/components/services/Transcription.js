@@ -106,7 +106,7 @@ function Transcription() {
           textAlign:"left"
       }
     }}>
-        Transcription of audio by people native to the language into accurate, readable text.
+        Our transcription annotation services play a crucial role in creating high-quality datasets that drive the performance of large language models, particularly for Indian languages.
         </Typography>
       </Box>
       
