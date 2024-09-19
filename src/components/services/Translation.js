@@ -104,7 +104,7 @@ function Translation() {
           textAlign:"left"
       }
        }}>
-       Comprehensive text curation and enhancing and translating text with the help of language experts for various applications.
+       Expert translation annotation services in multiple Indian languages, enabling accurate and culturally relevant language models that bridge linguistic gaps and facilitate effective cross-cultural communication.
         </Typography>
       </Box>
       
