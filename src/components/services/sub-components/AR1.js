@@ -1,11 +1,42 @@
+import { useState } from 'react';
+import { Typography, Button } from '@mui/material';
+
 function AR1() {
+
+   const [showFullText, setShowFullText] = useState(false);
+
+  const toggleText = () => {
+    setShowFullText(!showFullText);
+  };
+
   return (
 
 <div style={{margin:"20px",marginBottom:"50px"}}>
         
 
-  <h5 style={{fontFamily:"unset", textAlign: "justify",wordSpacing: "2px" }}>
-  
+{showFullText ? (
+
+<Typography
+sx={{
+  fontSize: {
+    xs: '1.25rem',
+    sm: '1.3rem',
+    md: '1.35rem',
+    lg: '1.4rem',
+    xl: '1.5rem',
+  },
+  textAlign: "justify",
+ // lineHeight: '2',
+  fontFamily:"unset",
+  wordSpacing: "2px",
+//   marginTop: "80px",
+//   marginBottom: "80px",
+  '@media (max-width: 450px)': {
+textAlign:"left"
+}
+}}
+>
+ 
  <b>1. Training Speech Recognition Systems :</b><br/>
    Audio recordings in various Indian languages provide the foundational data necessary for training robust speech recognition systems. By capturing diverse accents, dialects, and speech patterns, these recordings enable LLMs to accurately transcribe spoken language, improving accessibility for users across the linguistic spectrum.
    <br/><br/>
@@ -35,10 +66,57 @@ function AR1() {
 <b>  7. Improving Accessibility Features :</b><br/>
   Audio recordings play a critical role in enhancing accessibility features for individuals with disabilities. By training LLMs on diverse audio datasets, applications can provide accurate voice-to-text services or audio descriptions that cater to users with hearing impairments.
   <br/>
-</h5>
-      
+ </Typography> ) : (
+
+<Typography
+sx={{
+  fontSize: {
+    xs: '1.25rem',
+    sm: '1.3rem',
+    md: '1.35rem',
+    lg: '1.4rem',
+    xl: '1.5rem',
+  },
+  textAlign: "justify",
+ // lineHeight: '2',
+  fontFamily:"unset",
+  wordSpacing: "2px",
+//   marginTop: "80px",
+//   marginBottom: "80px",
+  '@media (max-width: 450px)': {
+textAlign:"left"
+}
+}}
+>
+
+  <b>1. Training Speech Recognition Systems :</b><br/>
+   Audio recordings in various Indian languages provide the foundational data necessary for training robust speech recognition systems. By capturing diverse accents, dialects, and speech patterns, these recordings enable LLMs to accurately transcribe spoken language, improving accessibility for users across the linguistic spectrum.
+   <br/><br/>
+  
+<b>2. Enhancing Conversational AI :</b><br/>
+  For chatbots and virtual assistants, audio recordings serve as vital training data.By incorporating real conversations in Indian languages, LLMs can learn natural dialogue flows, user intents, and contextual responses. This results in more intuitive and effective conversational AI that resonates with local users.
+   <br/><br/>
+
+<b>3. Multimodal Learning :</b><br/>
+  Audio recordings can be integrated with text and visual data to create multimodal learning environments. By combining spoken language with corresponding text or images, RAG systems can retrieve and generate content that is contextually relevant and rich in information, catering to diverse user needs.
+  <br/><br/>
+   
+</Typography>
+   )}
+
+<Button 
+        onClick={toggleText} 
+        variant="contained" 
+        sx={{ display: 'block', margin: '20px auto' }}
+      >
+        {showFullText ? "Show Less" : "Load More"}
+      </Button>
+   
     </div>
   )
 }
 
 export default AR1
+
+
+
