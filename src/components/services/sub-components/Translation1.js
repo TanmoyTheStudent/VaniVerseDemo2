@@ -108,9 +108,7 @@ textAlign:"left"
     Translation annotations can help tailor MT systems for specific domains such as healthcare, agriculture, and tourism. By annotating data pertinent to these fields, MT systems can be trained to produce more accurate and contextually relevant translations.
     <br/><br/>
 
-<b>4. Facilitating Government Communication :</b><br/>
-    With Hindi and English being the official languages in India, translation annotations can assist in translating government documents into regional languages. This ensures that important information reaches a broader audience, thereby enhancing public engagement and understanding of government initiatives.
-    <br/><br/>
+
    
 </Typography>
    )}
