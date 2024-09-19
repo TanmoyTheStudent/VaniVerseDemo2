@@ -246,7 +246,7 @@ sx={{margin:{xs:"2%",sm:"3%",md:"4%"},color:"white",fontFamily:"sans-serif",
                         <Typography gutterBottom variant="h5" component="div">
                           {ele.title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" color="text.secondary" sx={{ textAlign:{xs:"left",md:"left"} }}>
            {ele.description}
           </Typography>
                       </CardContent>
