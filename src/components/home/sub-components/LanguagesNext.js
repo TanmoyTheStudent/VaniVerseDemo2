@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import WordCloud from "../../../required-data/assests/image/Language4.png"
+import WordCloud from "../../../required-data/assests/image/Language6.png"
 
 const languages = [
     "Boro","Kannada","Khasi","Kokborok","Magahi","Malayalam","Meitei","Nepali","Odia","Tamil"
