@@ -3,7 +3,7 @@ import { Box, Typography, Avatar, Grid } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import Logo from "../../../required-data/assests/image/vaniverse-logo.png"
+import Logo from "../../../required-data/assests/image/Logo7.png";
 
 
 const ContactCard = () => {
@@ -47,13 +47,17 @@ const ContactCard = () => {
       <Typography variant="h4" gutterBottom sx={{ marginTop: '1rem',marginBottom:"2rem" }}>
         Reach Us
       </Typography>
-      <Avatar
+       <Avatar
         alt="Contact"
         src={Logo}
         sx={{
           width: '100px',
           height: '100px',
           margin: '0 auto 1rem',
+          background: "white",
+          '& img': {
+                transform: 'scale(0.75)' 
+          }
         }}
       />
       <Grid container spacing={2} justifyContent="center" alignItems="center">
