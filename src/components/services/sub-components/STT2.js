@@ -1,13 +1,42 @@
-import React from 'react'
+import { useState } from 'react';
+import { Typography, Button } from '@mui/material';
 
 function STT2() {
+
+   const [showFullText, setShowFullText] = useState(false);
+
+  const toggleText = () => {
+    setShowFullText(!showFullText);
+  };
+
   return (
 
 <div style={{margin:"20px",marginBottom:"50px"}}>
         
 
-  <h5 style={{fontFamily:"unset", textAlign: "justify",wordSpacing: "2px" }}>
-  
+{showFullText ? (
+
+<Typography
+sx={{
+  fontSize: {
+    xs: '1.25rem',
+    sm: '1.3rem',
+    md: '1.35rem',
+    lg: '1.4rem',
+    xl: '1.5rem',
+  },
+  textAlign: "justify",
+ // lineHeight: '2',
+  fontFamily:"unset",
+  wordSpacing: "2px",
+//   marginTop: "80px",
+//   marginBottom: "80px",
+  '@media (max-width: 450px)': {
+textAlign:"left"
+}
+}}
+>
+ 
  <b>1. Speech Recognition Systems :</b><br/>
   Transcription annotations are essential for training speech recognition systems. By converting spoken language into text, we create annotated datasets that enable LLMs to accurately recognize and process audio inputs in various Indian languages. This is vital for applications in voice assistants, transcription services, and accessibility tools. 
   <br/><br/>
@@ -46,18 +75,66 @@ function STT2() {
   Creating annotated datasets from transcriptions of audio content is crucial for developing accessibility solutions, such as closed captioning and audio descriptions. LLMs can utilize these datasets to generate accurate and contextually relevant captions, enhancing accessibility for individuals with hearing impairments.
 <br/><br/>
 
-
-
 <b>10. Cultural and Linguistic Preservation :</b><br/>
   Transcribing and annotating oral histories, folklore, and traditional narratives in Indian languages contribute to cultural preservation. LLMs can learn from these datasets to generate content that respects and reflects the rich linguistic diversity of India. By highlighting these use cases, you can effectively communicate the significance of your transcription annotation services in creating datasets for large language models. This not only informs potential clients about the value of your offerings but also illustrates how your services can contribute to advancements in AI and language technology.
 <br/><br/>
 
+ </Typography> ) : (
 
+<Typography
+sx={{
+  fontSize: {
+    xs: '1.25rem',
+    sm: '1.3rem',
+    md: '1.35rem',
+    lg: '1.4rem',
+    xl: '1.5rem',
+  },
+  textAlign: "justify",
+ // lineHeight: '2',
+  fontFamily:"unset",
+  wordSpacing: "2px",
+//   marginTop: "80px",
+//   marginBottom: "80px",
+  '@media (max-width: 450px)': {
+textAlign:"left"
+}
+}}
+>
 
-        </h5>
-      
+   <b>1. Speech Recognition Systems :</b><br/>
+  Transcription annotations are essential for training speech recognition systems. By converting spoken language into text, we create annotated datasets that enable LLMs to accurately recognize and process audio inputs in various Indian languages. This is vital for applications in voice assistants, transcription services, and accessibility tools. 
+  <br/><br/>
+
+<b>2. Conversational AI Development :</b><br/>
+  Developing chatbots and virtual assistants requires extensive training data. Our transcription annotations help create datasets from recorded conversations, allowing LLMs to learn natural dialogue patterns, user intents, and contextual responses. This enhances the effectiveness of conversational AI in understanding and responding to user queries. 
+  <br/><br/>
+
+<b>3. Content Generation :</b><br/>
+  Transcription annotations can be used to create datasets that inform content generation models. By annotating transcriptions of lectures, podcasts, and webinars, LLMs can learn to generate coherent and contextually relevant text, making them valuable for applications in content creation, marketing, and education.
+  <br/><br/>
+
+<b>4. Language Translation Models :</b><br/>
+  High-quality transcription annotations contribute to the development of translation models for Indian languages. By providing accurate transcriptions of spoken language, we create datasets that help LLMs understand linguistic nuances, idiomatic expressions, and cultural contexts, resulting in more effective translation services.
+  <br/><br/>
+   
+</Typography>
+   )}
+
+<Button 
+        onClick={toggleText} 
+        variant="contained" 
+        sx={{ display: 'block', margin: '20px auto' }}
+      >
+        {showFullText ? "Show Less" : "Load More"}
+      </Button>
+   
     </div>
   )
 }
 
 export default STT2
+
+
+
+
