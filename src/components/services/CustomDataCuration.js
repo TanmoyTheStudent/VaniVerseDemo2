@@ -4,7 +4,8 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import MessageForm from '../home/MessageForm';
-import CDA1 from './sub-components/CDA1';
+//import CDA1 from './sub-components/CDA1';
+import CDA1New from './sub-components/CDA1-new';
 import CDA2 from './sub-components/CDA2';
 
 const tabDesign={
@@ -122,7 +123,7 @@ function CustomDataCuration() {
             </TabList>
           </Box>
           {/* <TabPanel value="1"><STT1/></TabPanel> */}
-          <TabPanel value="1"><CDA1/></TabPanel>
+          <TabPanel value="1"><CDA1New/></TabPanel>
         </TabContext>
       </Box>
   
