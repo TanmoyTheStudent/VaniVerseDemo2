@@ -105,7 +105,7 @@ function AudioRecording() {
           textAlign:"left"
       }
         }}>
-        Read Speech recording,or extempore audio recording by the native people based on the requirements of language, dialect, gender, age of the speaker, expressive story reading, and the recording environment of the audio.
+        High-quality audio recording services in various Indian languages, capturing clear and articulate speech for diverse applications.
         </Typography>
       </Box>
       
