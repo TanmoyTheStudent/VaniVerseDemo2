@@ -1,7 +1,7 @@
-import Image1 from "../assests/image/earn 3.jpeg"
+import Image1 from "../assests/image/audioRecording.jpeg"
 import Image2 from "../assests/image/stt.jpeg"
 import Image3 from "../assests/image/ttt.jpeg"
-import Image4 from "../assests/image/data-curation.jpeg"
+import Image4 from "../assests/image/dataCuration.jpeg"
 
 
 
