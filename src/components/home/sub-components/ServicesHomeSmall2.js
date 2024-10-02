@@ -96,7 +96,10 @@ const ServicesHomeSmall2 = () => {
                                         marginTop: "50px",
                                         marginBottom: "50px",
                                         borderRadius: "10px",
-                                        margin: "10px"
+                                        margin: "10px",
+                                        '@media (max-width: 450px)': {
+                                            width: '90%'
+                                        }
                                     }}
                                     key={i}
                                 >
@@ -182,12 +185,15 @@ const ServicesHomeSmall2 = () => {
                                             src={servicesInHomePage[ele].image}
                                             alt="Microphone and waveform"
                                             sx={{
-                                                maxWidth: { xs: '85%', sm: "70%" },
+                                                maxWidth: { xs: '80%', sm: "70%" },
                                                 zIndex: 1,
                                                 borderRadius: '10%',
                                                 margin: "5%",
                                                 padding: "2%",
                                                 border: "5px solid black",
+                                                '@media (max-width: 450px)': {
+                                            maxWidth: '90%'
+                                        }
                                             }}
                                         />
                                     </Box>
@@ -215,7 +221,10 @@ const ServicesHomeSmall2 = () => {
                                             borderRadius: "10px",
                                             margin: "10px",
                                             marginTop: "10%",
-                                            marginBottom: "10%"
+                                            marginBottom: "10%",
+                                            '@media (max-width: 450px)': {
+                                            width: '90%'
+                                        }
                                         }}
                                     >
                                         <Box
