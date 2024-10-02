@@ -11,6 +11,7 @@ import ProvidingPlatform from './sub-components/ProvidingPlatform';
 import ProvidingPlatform3 from './sub-components/ProvidingPlatform3';
 import ParticipateAndEarn from "./sub-components/ParticipateAndEarn";
 import ParticipateAndEarn2 from "./sub-components/ParticipateAndEarn2";
+import MessageForm2 from './MessageForm2';
 
 function Home() {
 
@@ -121,7 +122,7 @@ function Home() {
 <ProvidingPlatform3 />
 {/* <ParticipateAndEarn/> */}
 <ParticipateAndEarn2 />
-
+<MessageForm2 /> 
 
 </div>
   )
