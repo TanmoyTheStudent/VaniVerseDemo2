@@ -8,6 +8,7 @@ import ServicesHomeSmall from './sub-components/Services-Home-Small';
 import LanguagesWeWork from './sub-components/LanguagesWeWork';
 import LanguagesList from './sub-components/LanguagesList';
 import ProvidingPlatform from './sub-components/ProvidingPlatform';
+import ProvidingPlatform3 from './sub-components/ProvidingPlatform3';
 
 function Home() {
 
@@ -114,7 +115,8 @@ function Home() {
 {/*  {!isSmallScreen?<ServicesHome/>: <ServicesHomeSmall/>}  */}
 {!isSmallScreen?<ServicesHome2/>: <ServicesHomeSmall/>}
 
-<ProvidingPlatform/>
+{/* <ProvidingPlatform/> */}
+<ProvidingPlatform3 />
 <ParticipateAndEarn/>
 
 
