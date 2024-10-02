@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Box, Typography, Button, Grid, Card, CardActionArea, CardContent } from '@mui/material';
-import { servicesInHomePage, associatedServices } from '../../requiredData/staticInformation/homePageInfo';
-import Routes from '../../../../constants/Routes';
+import { servicesInHomePage,associatedServices } from '../../../required-data/object-data/servicesInHome';
+
+//import Routes from '../../../../constants/Routes';
 
 
 
@@ -428,7 +429,7 @@ const ServicesHome = () => {
                                 },
                             }}
                             component={Link}
-                            to={Routes.otherAssociatedServices}
+                            to="/our-services/others"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
