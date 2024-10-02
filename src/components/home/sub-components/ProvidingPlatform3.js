@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { Paper, Typography, Box, Button } from "@mui/material"
 import { motion } from 'framer-motion';
-import Image from "../../requiredData/images/providing-platform.jpg"
-import { design } from "../../requiredData/staticInformation/homePageInfo";
-import Routes from "../../../../constants/Routes";
+import Image from "../../../required-data/assests/image/providing-platform.jpg"
+//import Routes from "../../../../constants/Routes";
 
 function ProvidingPlatform() {
     return (
@@ -152,7 +151,7 @@ function ProvidingPlatform() {
                                 },
                             }}
                             component={Link}
-                            to={Routes.providingPlatfform}
+                            to="/our-services/providing-platform"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
