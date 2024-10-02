@@ -3,6 +3,7 @@ import Background from "../../required-data/assests/image/background.jpeg"
 import ParticipateAndEarn from "./sub-components/ParticipateAndEarn";
 import LoginForm from './sub-components/LoginForm';
 import ServicesHome from './sub-components/Services-Home';
+import ServicesHome2 from './sub-components/ServicesHome2';
 import ServicesHomeSmall from './sub-components/Services-Home-Small';
 import LanguagesWeWork from './sub-components/LanguagesWeWork';
 import LanguagesList from './sub-components/LanguagesList';
@@ -110,7 +111,8 @@ function Home() {
 
 {/* <LanguagesWeWork /> */}
 <LanguagesList/>
-{!isSmallScreen?<ServicesHome/>: <ServicesHomeSmall/>}
+{/*  {!isSmallScreen?<ServicesHome/>: <ServicesHomeSmall/>}  */}
+{!isSmallScreen?<ServicesHome2/>: <ServicesHomeSmall/>}
 
 <ProvidingPlatform/>
 <ParticipateAndEarn/>
