@@ -8,7 +8,7 @@ import { servicesInHomePage,associatedServices } from '../../../required-data/ob
 
 
 
-const ServicesHome = () => {
+const ServicesHome2 = () => {
 
 
     return (
@@ -444,4 +444,4 @@ const ServicesHome = () => {
     );
 };
 
-export default ServicesHome;
+export default ServicesHome2;
