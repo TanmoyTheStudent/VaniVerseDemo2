@@ -6,7 +6,7 @@ import { servicesInHomePage,associatedServices,button,design } from '../../../re
 
 
 
-const ServicesHomeSmall = () => {
+const ServicesHomeSmall2 = () => {
     return (
         <>
             <Box
@@ -449,4 +449,4 @@ const ServicesHomeSmall = () => {
     );
 };
 
-export default ServicesHomeSmall;
+export default ServicesHomeSmall2;
