@@ -5,6 +5,7 @@ import LoginForm from './sub-components/LoginForm';
 import ServicesHome from './sub-components/Services-Home';
 import ServicesHome2 from './sub-components/ServicesHome2';
 import ServicesHomeSmall from './sub-components/Services-Home-Small';
+import ServicesHomeSmall2 from './sub-components/ServicesHomeSmall2';
 import LanguagesWeWork from './sub-components/LanguagesWeWork';
 import LanguagesList from './sub-components/LanguagesList';
 import ProvidingPlatform from './sub-components/ProvidingPlatform';
@@ -113,7 +114,7 @@ function Home() {
 {/* <LanguagesWeWork /> */}
 <LanguagesList/>
 {/*  {!isSmallScreen?<ServicesHome/>: <ServicesHomeSmall/>}  */}
-{!isSmallScreen?<ServicesHome2/>: <ServicesHomeSmall/>}
+{!isSmallScreen?<ServicesHome2/>: <ServicesHomeSmall2/>}
 
 {/* <ProvidingPlatform/> */}
 <ProvidingPlatform3 />
