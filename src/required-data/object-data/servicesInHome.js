@@ -56,6 +56,59 @@ export const associatedServices=[
     }
 ]
 
+export const word1 = [
+    { text: "Assamese", color: "navy" },
+    { text: "বাংলা", color: "black" },
+    { text: "Boro", color: "gray" },
+    { text: "English", color: "#0c76e3" },
+    { text: "हिन्दी", color: "black" },
+    { text: "Kannada", color: "navy" },
+    { text: "ক ক্ত্যেন খসি", color: "gray" },
+    { text: "Kokborok", color: "#0c76e3" },
+    { text: "मगही", color: "black" },
+    { text: "Maithili", color: "navy" },
+];
+
+export const word2 = [
+    { text: "অসমীয়া", color: "#0c76e3" },
+    { text: "Bengali", color: "gray" },
+    { text: "बरʼ", color: "black" },
+    { text: "English", color: "navy" },
+    { text: "Hindi", color: "black" },
+    { text: "ಕನ್ನಡ", color: "#0c76e3" },
+    { text: "Khasi", color: "gray" },
+    { text: "ককবরক", color: "navy" },
+    { text: "Magahi", color: "black" },
+    { text: "मैथिली", color: "#0c76e3" }
+];
+
+
+export const word3 = [
+    { text: "മലയാളം", color: "#0c76e3" },
+    { text: "Marathi", color: "gray" },
+    { text: "नेपाली", color: "black" },
+    { text: "Odia", color: "navy" },
+    { text: "राजस्थानी", color: "black" },
+    { text: "Sanskrit", color: "#0c76e3" },
+    { text: "ᱥᱟᱱᱛᱟᱲᱤ", color: "gray" },
+    { text: "Tamil", color: "navy" },
+    { text: "తెలుగు", color: "black" },
+    { text: "Urdu", color: "#0c76e3" }
+];
+
+export const word4 = [
+    { text: "Malayalam", color: "navy" },
+    { text: "मराठी", color: "black" },
+    { text: "Nepali", color: "gray" },
+    { text: "ଓଡ଼ିଆ", color: "#0c76e3" },
+    { text: "Rajasthani", color: "black" },
+    { text: "संस्कृत", color: "navy" },
+    { text: "Santali", color: "gray" },
+    { text: "தமிழ்", color: "#0c76e3" },
+    { text: "Telugu", color: "black" },
+    { text: "اردو", color: "navy" },
+];
+
 export const button=[
     {
       name:"Explore More",
