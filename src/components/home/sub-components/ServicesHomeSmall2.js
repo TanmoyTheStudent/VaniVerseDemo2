@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Box, Typography, Button, Paper, Grid, Card, CardActionArea, CardContent } from '@mui/material';
-import { servicesInHomePage,associatedServices,button,design } from '../../../required-data/object-data/servicesInHome';
+import { servicesInHomePage,associatedServices } from '../../../required-data/object-data/servicesInHome';
 //import Routes from '../../../../constants/Routes';
 
 
