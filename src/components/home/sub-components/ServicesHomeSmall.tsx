@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Box, Typography, Button, Paper, Grid, Card, CardActionArea, CardContent } from '@mui/material';
-import { servicesInHomePage, associatedServices, button, design } from '../../requiredData/staticInformation/homePageInfo';
-import Routes from '../../../../constants/Routes';
+import { servicesInHomePage,associatedServices,button,design } from '../../../required-data/object-data/servicesInHome';
+//import Routes from '../../../../constants/Routes';
 
 
 
@@ -10,7 +10,7 @@ const ServicesHomeSmall = () => {
     return (
         <>
             <Box
-                style={{
+                sx={{
                     backgroundColor: "ButtonHighlight",
                     // minHeight: "500px",
                     // height: 'auto',
@@ -27,7 +27,7 @@ const ServicesHomeSmall = () => {
                 }}>
 
                 <Box
-                    style={{
+                    sx={{
                         // backgroundColor: "ButtonHighlight",
                         minHeight: "500px",
                         // height: 'auto',
@@ -335,6 +335,7 @@ const ServicesHomeSmall = () => {
                         backgroundBlendMode: 'overlay',
                         padding: 4,
                         //color: 'white',
+                        width:"80%",
                         minHeight: "550px",
                         marginTop: "50px",
                         marginBottom: "50px",
@@ -429,7 +430,7 @@ const ServicesHomeSmall = () => {
                                 },
                             }}
                             component={Link}
-                            to={Routes.otherAssociatedServices}
+                            to="/our-services/others"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
