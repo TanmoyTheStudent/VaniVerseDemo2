@@ -11,7 +11,7 @@ function ProvidingPlatform3() {
 
 
             <Box
-                style={{
+                sx={{
                     // backgroundColor: "ButtonHighlight",
                     // minHeight: "500px",
                     // height: 'auto',
@@ -28,9 +28,9 @@ function ProvidingPlatform3() {
                 }}>
 
                 <Box
-                    style={{
+                    sx={{
                         // backgroundColor: "ButtonHighlight",
-                        minHeight: "525px",
+                        minHeight: {xs:"500px",lg:"550px"},
                         // height: 'auto',
                         // maxHeight: "1500px",
                         // //width: '100%',
