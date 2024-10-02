@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Container, Typography, Grid, Button, Box, Card, CardContent, CardMedia, CardActionArea } from '@mui/material'
-import EarnImage from '../../requiredData/images/participateAndEarn.jpeg';
-import { design } from "../../requiredData/staticInformation/homePageInfo"
+import EarnImage from '../../../required-data/assests/image/participateAndEarn.jpeg';
+//import { design } from "../../requiredData/staticInformation/homePageInfo"
 
 
-function ParticipateAndEarn() {
+function ParticipateAndEarn2() {
     return (
         <>
             <Box
@@ -176,4 +176,4 @@ function ParticipateAndEarn() {
     )
 }
 
-export default ParticipateAndEarn
+export default ParticipateAndEarn2
