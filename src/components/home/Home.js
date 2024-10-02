@@ -1,6 +1,5 @@
 import { Container,Typography,Grid,Card,useMediaQuery, useTheme} from '@mui/material'
 import Background from "../../required-data/assests/image/background.jpeg"
-import ParticipateAndEarn from "./sub-components/ParticipateAndEarn";
 import LoginForm from './sub-components/LoginForm';
 import ServicesHome from './sub-components/Services-Home';
 import ServicesHome2 from './sub-components/ServicesHome2';
@@ -10,6 +9,8 @@ import LanguagesWeWork from './sub-components/LanguagesWeWork';
 import LanguagesList from './sub-components/LanguagesList';
 import ProvidingPlatform from './sub-components/ProvidingPlatform';
 import ProvidingPlatform3 from './sub-components/ProvidingPlatform3';
+import ParticipateAndEarn from "./sub-components/ParticipateAndEarn";
+import ParticipateAndEarn2 from "./sub-components/ParticipateAndEarn2";
 
 function Home() {
 
@@ -118,7 +119,8 @@ function Home() {
 
 {/* <ProvidingPlatform/> */}
 <ProvidingPlatform3 />
-<ParticipateAndEarn/>
+{/* <ParticipateAndEarn/> */}
+<ParticipateAndEarn2 />
 
 
 </div>
