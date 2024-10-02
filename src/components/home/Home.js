@@ -5,6 +5,7 @@ import LoginForm from './sub-components/LoginForm';
 import ServicesHome from './sub-components/Services-Home';
 import ServicesHomeSmall from './sub-components/Services-Home-Small';
 import LanguagesWeWork from './sub-components/LanguagesWeWork';
+import LanguagesList from './sub-components/LanguagesList';
 import ProvidingPlatform from './sub-components/ProvidingPlatform';
 
 function Home() {
@@ -106,7 +107,7 @@ function Home() {
 
 </div>
 
-<LanguagesWeWork/>
+<LanguagesList/>
 {!isSmallScreen?<ServicesHome/>: <ServicesHomeSmall/>}
 
 <ProvidingPlatform/>
