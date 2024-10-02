@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from "../../../required-data/assests/image/providing-platform.jpg"
 //import Routes from "../../../../constants/Routes";
 
-function ProvidingPlatform() {
+function ProvidingPlatform3() {
     return (
         <div >
 
@@ -191,4 +191,4 @@ function ProvidingPlatform() {
     )
 }
 
-export default ProvidingPlatform
+export default ProvidingPlatform3
