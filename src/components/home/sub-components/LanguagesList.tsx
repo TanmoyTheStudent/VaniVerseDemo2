@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Typography } from "@mui/material"
 import { keyframes } from '@mui/system';
-import { word1, word2, word3, word4 } from "../../requiredData/staticInformation/homePageInfo";
+import { word1, word2, word3, word4 } from '../../../required-data/object-data/servicesInHome';
 
 
 const fadeInOut = keyframes`
