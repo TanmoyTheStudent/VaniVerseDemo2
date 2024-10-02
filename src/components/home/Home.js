@@ -107,6 +107,8 @@ function Home() {
 
 </div>
 
+
+{/* <LanguagesWeWork /> */}
 <LanguagesList/>
 {!isSmallScreen?<ServicesHome/>: <ServicesHomeSmall/>}
 
